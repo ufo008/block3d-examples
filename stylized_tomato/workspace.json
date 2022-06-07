@@ -1,0 +1,334 @@
+{
+  "main": {
+    "type": "block",
+    "data": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "scene_assets_manager",
+            "id": "4h;M),-e/*%Nax/1%zJQ",
+            "x": 507,
+            "y": 279,
+            "fields": {
+              "USE_DEFAULT_PRELOADER": false
+            },
+            "inputs": {
+              "LOAD_ASSETS": {
+                "block": {
+                  "type": "variables_set",
+                  "id": "55~vgy`DfCQ6aD5qIz}.",
+                  "fields": {
+                    "VAR": {
+                      "id": "0$FzNhriNYt+,Qx1j(EF"
+                    }
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "scene_load_asset",
+                        "id": "Z-0A5`}ReTTMJ;2A9!m%",
+                        "fields": {
+                          "TYPE": "addMeshTask"
+                        },
+                        "inputs": {
+                          "ASSET_NAME": {
+                            "shadow": {
+                              "type": "text",
+                              "id": "0AfCY+|?[yckmC_XRURj",
+                              "fields": {
+                                "TEXT": "loadMesh"
+                              }
+                            }
+                          },
+                          "URL": {
+                            "shadow": {
+                              "type": "text",
+                              "id": "aIEfUT41FGIqwN.l|_R3",
+                              "fields": {
+                                "TEXT": "assets/scene/scene.gltf"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ON_FINISH": {
+                "block": {
+                  "type": "scene_update_default_environment",
+                  "id": "!#[Sb^iBU2uvPTF4a3Dn",
+                  "inputs": {
+                    "OPTIONS": {
+                      "shadow": {
+                        "type": "empty_object",
+                        "id": "p9O*mvgKBAm*_TP9ONtR"
+                      },
+                      "block": {
+                        "type": "object_create",
+                        "id": ":I??ep+X}Gpu{n4PCCK:",
+                        "fields": {
+                          "EMPTY": false
+                        },
+                        "inputs": {
+                          "ITEM": {
+                            "block": {
+                              "type": "scene_create_default_environment_option",
+                              "id": "v;|yVUklMfz0InfJ8U9u",
+                              "fields": {
+                                "KEY": "skyboxColor"
+                              },
+                              "inputs": {
+                                "VALUE": {
+                                  "shadow": {
+                                    "type": "field_color3",
+                                    "id": ",jJM)6:k?V^C=;VOssk,",
+                                    "fields": {
+                                      "R": 255,
+                                      "G": 150,
+                                      "B": 200
+                                    }
+                                  },
+                                  "block": {
+                                    "type": "material_color3_from_hex",
+                                    "id": "^MpW+Ad%oCkm]jRsMb4[",
+                                    "inputs": {
+                                      "HEX": {
+                                        "shadow": {
+                                          "type": "text",
+                                          "id": "lb[rDK~5I4T@YP)wpt!`",
+                                          "fields": {
+                                            "TEXT": "#E66A16"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "scene_create_default_environment_option",
+                                  "id": "0slnoJQDqjD.(zR-O6lJ",
+                                  "fields": {
+                                    "KEY": "groundColor"
+                                  },
+                                  "inputs": {
+                                    "VALUE": {
+                                      "shadow": {
+                                        "type": "field_color3",
+                                        "id": "`03OdhxVM[-!+_RDmWE0",
+                                        "fields": {
+                                          "R": 255,
+                                          "G": 150,
+                                          "B": 200
+                                        }
+                                      },
+                                      "block": {
+                                        "type": "material_color3_from_hex",
+                                        "id": "+{Fr:h}e,;7eU}BoX_}:",
+                                        "inputs": {
+                                          "HEX": {
+                                            "shadow": {
+                                              "type": "text",
+                                              "id": "8%Gku5vT_)JBbfTV/xi/",
+                                              "fields": {
+                                                "TEXT": "#E66A16"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "array_for_each",
+                      "id": "Y.ABh:a_is7pUT:VfMPw",
+                      "inputs": {
+                        "LIST": {
+                          "block": {
+                            "type": "node_get_children",
+                            "id": "~eEra*jC}c5$m-YNfD}V",
+                            "fields": {
+                              "TYPE": "childMeshes"
+                            },
+                            "inputs": {
+                              "NODE": {
+                                "shadow": {
+                                  "type": "mesh_selector",
+                                  "id": "^#TiPo17#N~$ljVd~TE,",
+                                  "fields": {
+                                    "NAME": "__root__"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "DO_STATEMENT": {
+                          "block": {
+                            "type": "set_get_mesh_prop",
+                            "id": ":L7cta$85[nIbs`dy^pM",
+                            "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                            "fields": {
+                              "METHOD": "set",
+                              "KEY": "outlineColor"
+                            },
+                            "inputs": {
+                              "MESH": {
+                                "shadow": {
+                                  "type": "mesh_selector",
+                                  "id": "b9*Sop#UV5t1I4EgInoB",
+                                  "fields": {
+                                    "NAME": ""
+                                  }
+                                },
+                                "block": {
+                                  "type": "array_element_index",
+                                  "id": "pPR8U1OTCOqH9:j1C:QL",
+                                  "fields": {
+                                    "ITEM": "element"
+                                  }
+                                }
+                              },
+                              "VALUE": {
+                                "shadow": {
+                                  "type": "field_color3",
+                                  "id": "JA_)WH@j7k#o0*30y-#{",
+                                  "fields": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0
+                                  }
+                                },
+                                "block": {
+                                  "type": "material_color3_from_hex",
+                                  "id": "0h7b/o^MLMZvnJ06::MH",
+                                  "inputs": {
+                                    "HEX": {
+                                      "shadow": {
+                                        "type": "text",
+                                        "id": "OGrPr:Uh?sm.pr^Y;ta1",
+                                        "fields": {
+                                          "TEXT": "#230e00"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "type": "set_get_mesh_prop",
+                                "id": "dU:*!6aDIC!sc@F%zz9h",
+                                "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                "fields": {
+                                  "METHOD": "set",
+                                  "KEY": "outlineWidth"
+                                },
+                                "inputs": {
+                                  "MESH": {
+                                    "shadow": {
+                                      "type": "mesh_selector",
+                                      "id": "b9*Sop#UV5t1I4EgInoB",
+                                      "fields": {
+                                        "NAME": ""
+                                      }
+                                    },
+                                    "block": {
+                                      "type": "array_element_index",
+                                      "id": "}LYh+lntA7C)@Homz6W}",
+                                      "fields": {
+                                        "ITEM": "element"
+                                      }
+                                    }
+                                  },
+                                  "VALUE": {
+                                    "shadow": {
+                                      "type": "math_number",
+                                      "id": "M5Oi!y`y%Kxbna5;$jG8",
+                                      "fields": {
+                                        "NUM": 0.0075
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "set_get_mesh_prop",
+                                    "id": "9aQ2T58%+$_n=N)HQZDL",
+                                    "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                    "fields": {
+                                      "METHOD": "set",
+                                      "KEY": "renderOutline"
+                                    },
+                                    "inputs": {
+                                      "MESH": {
+                                        "shadow": {
+                                          "type": "mesh_selector",
+                                          "id": "b9*Sop#UV5t1I4EgInoB",
+                                          "fields": {
+                                            "NAME": ""
+                                          }
+                                        },
+                                        "block": {
+                                          "type": "array_element_index",
+                                          "id": "!n_+HX+pbk=f!;xMcJQA",
+                                          "fields": {
+                                            "ITEM": "element"
+                                          }
+                                        }
+                                      },
+                                      "VALUE": {
+                                        "shadow": {
+                                          "type": "logic_boolean",
+                                          "id": "3#]?|D;q%.(I7a73v@]0",
+                                          "fields": {
+                                            "BOOL": "TRUE"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "variables": [
+        {
+          "name": "mesh",
+          "id": "0$FzNhriNYt+,Qx1j(EF"
+        }
+      ]
+    }
+  },
+  "setting": {
+    "data": {
+      "lang": "en",
+      "gutterPosition": "56",
+      "openInspector": false
+    }
+  }
+}
