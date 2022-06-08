@@ -7,27 +7,22 @@
         "blocks": [
           {
             "type": "scene_assets_manager",
-            "id": "4h;M),-e/*%Nax/1%zJQ",
-            "x": 507,
-            "y": 279,
+            "id": "F%cMzOPP3C~e:;pTjd:M",
+            "x": 190,
+            "y": 110,
             "fields": {
-              "USE_DEFAULT_PRELOADER": false
+              "USE_DEFAULT_PRELOADER": true
             },
             "inputs": {
               "LOAD_ASSETS": {
                 "block": {
-                  "type": "variables_set",
-                  "id": "55~vgy`DfCQ6aD5qIz}.",
-                  "fields": {
-                    "VAR": {
-                      "id": "0$FzNhriNYt+,Qx1j(EF"
-                    }
-                  },
+                  "type": "advanced_connect",
+                  "id": "KAOp,t#Ag0RTi9g^W-g!",
                   "inputs": {
-                    "VALUE": {
+                    "INPUT": {
                       "block": {
                         "type": "scene_load_asset",
-                        "id": "Z-0A5`}ReTTMJ;2A9!m%",
+                        "id": "M!p]4NoN*n/QrF}(DY_V",
                         "fields": {
                           "TYPE": "addMeshTask"
                         },
@@ -35,16 +30,16 @@
                           "ASSET_NAME": {
                             "shadow": {
                               "type": "text",
-                              "id": "0AfCY+|?[yckmC_XRURj",
+                              "id": "TFk;6Heo@)gGrPh7I^-_",
                               "fields": {
-                                "TEXT": "loadMesh"
+                                "TEXT": "load"
                               }
                             }
                           },
                           "URL": {
                             "shadow": {
                               "type": "text",
-                              "id": "aIEfUT41FGIqwN.l|_R3",
+                              "id": "=p~u).#VL4V/S0MGv!X7",
                               "fields": {
                                 "TEXT": "assets/scene/scene.gltf"
                               }
@@ -59,16 +54,16 @@
               "ON_FINISH": {
                 "block": {
                   "type": "scene_update_default_environment",
-                  "id": "!#[Sb^iBU2uvPTF4a3Dn",
+                  "id": "SfRTx7Htn![h}^+EbUlv",
                   "inputs": {
                     "OPTIONS": {
                       "shadow": {
                         "type": "empty_object",
-                        "id": "p9O*mvgKBAm*_TP9ONtR"
+                        "id": "k[=R7!;==^Z{8V1i[tm{"
                       },
                       "block": {
                         "type": "object_create",
-                        "id": ":I??ep+X}Gpu{n4PCCK:",
+                        "id": "iyChi3)gy~i7Ph/B?40S",
                         "fields": {
                           "EMPTY": false
                         },
@@ -76,7 +71,7 @@
                           "ITEM": {
                             "block": {
                               "type": "scene_create_default_environment_option",
-                              "id": "v;|yVUklMfz0InfJ8U9u",
+                              "id": "H}qP-n-*xQB#XL+]EBe8",
                               "fields": {
                                 "KEY": "skyboxColor"
                               },
@@ -84,23 +79,23 @@
                                 "VALUE": {
                                   "shadow": {
                                     "type": "field_color3",
-                                    "id": ",jJM)6:k?V^C=;VOssk,",
+                                    "id": "AsCmhx@^:b}3HMqs0ySG",
                                     "fields": {
-                                      "R": 255,
-                                      "G": 150,
-                                      "B": 200
+                                      "R": 100,
+                                      "G": 100,
+                                      "B": 255
                                     }
                                   },
                                   "block": {
                                     "type": "material_color3_from_hex",
-                                    "id": "^MpW+Ad%oCkm]jRsMb4[",
+                                    "id": "OT}NNpjkKmEdvPM#?QwS",
                                     "inputs": {
                                       "HEX": {
                                         "shadow": {
                                           "type": "text",
-                                          "id": "lb[rDK~5I4T@YP)wpt!`",
+                                          "id": "oHyLMXe?Hb#I`LVro_qd",
                                           "fields": {
-                                            "TEXT": "#E66A16"
+                                            "TEXT": "#E6680C"
                                           }
                                         }
                                       }
@@ -111,7 +106,7 @@
                               "next": {
                                 "block": {
                                   "type": "scene_create_default_environment_option",
-                                  "id": "0slnoJQDqjD.(zR-O6lJ",
+                                  "id": "{Gp-Mxu4l?(*hHD%D}UC",
                                   "fields": {
                                     "KEY": "groundColor"
                                   },
@@ -119,23 +114,23 @@
                                     "VALUE": {
                                       "shadow": {
                                         "type": "field_color3",
-                                        "id": "`03OdhxVM[-!+_RDmWE0",
+                                        "id": "B{xsSN+7nMLI$L6vC-uN",
                                         "fields": {
-                                          "R": 255,
-                                          "G": 150,
-                                          "B": 200
+                                          "R": 100,
+                                          "G": 100,
+                                          "B": 255
                                         }
                                       },
                                       "block": {
                                         "type": "material_color3_from_hex",
-                                        "id": "+{Fr:h}e,;7eU}BoX_}:",
+                                        "id": "`L)`)1#X*deGF+Bu:`ye",
                                         "inputs": {
                                           "HEX": {
                                             "shadow": {
                                               "type": "text",
-                                              "id": "8%Gku5vT_)JBbfTV/xi/",
+                                              "id": "JXr|jQs8k?J-/Fg6}B7v",
                                               "fields": {
-                                                "TEXT": "#E66A16"
+                                                "TEXT": "#E6680C"
                                               }
                                             }
                                           }
@@ -153,13 +148,18 @@
                   },
                   "next": {
                     "block": {
-                      "type": "array_for_each",
-                      "id": "Y.ABh:a_is7pUT:VfMPw",
+                      "type": "controls_forEach",
+                      "id": "RU1k)YGxo,n:Pn!iHY,w",
+                      "fields": {
+                        "VAR": {
+                          "id": "8|x4/2QM^5xCle|g:~9U"
+                        }
+                      },
                       "inputs": {
                         "LIST": {
                           "block": {
                             "type": "node_get_children",
-                            "id": "~eEra*jC}c5$m-YNfD}V",
+                            "id": "w~Kto./O#Q]Bj0fVgpED",
                             "fields": {
                               "TYPE": "childMeshes"
                             },
@@ -167,7 +167,7 @@
                               "NODE": {
                                 "shadow": {
                                   "type": "mesh_selector",
-                                  "id": "^#TiPo17#N~$ljVd~TE,",
+                                  "id": "|0dSOVD|V1WMf2F0wvHH",
                                   "fields": {
                                     "NAME": "__root__"
                                   }
@@ -176,10 +176,10 @@
                             }
                           }
                         },
-                        "DO_STATEMENT": {
+                        "DO": {
                           "block": {
                             "type": "set_get_mesh_prop",
-                            "id": ":L7cta$85[nIbs`dy^pM",
+                            "id": "qA][RQwg;#B2Dbh^SWZe",
                             "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
                             "fields": {
                               "METHOD": "set",
@@ -189,42 +189,29 @@
                               "MESH": {
                                 "shadow": {
                                   "type": "mesh_selector",
-                                  "id": "b9*Sop#UV5t1I4EgInoB",
+                                  "id": "oJmaY6_v~tvGJwEi;@Df",
                                   "fields": {
-                                    "NAME": ""
+                                    "NAME": "obj.004"
                                   }
                                 },
                                 "block": {
-                                  "type": "array_element_index",
-                                  "id": "pPR8U1OTCOqH9:j1C:QL",
+                                  "type": "variables_get",
+                                  "id": "ATiJwb,`mWaN-?5P.R3}",
                                   "fields": {
-                                    "ITEM": "element"
+                                    "VAR": {
+                                      "id": "8|x4/2QM^5xCle|g:~9U"
+                                    }
                                   }
                                 }
                               },
                               "VALUE": {
                                 "shadow": {
                                   "type": "field_color3",
-                                  "id": "JA_)WH@j7k#o0*30y-#{",
+                                  "id": "REQ0Td!v=DgETlrP+kXZ",
                                   "fields": {
                                     "R": 0,
                                     "G": 0,
                                     "B": 0
-                                  }
-                                },
-                                "block": {
-                                  "type": "material_color3_from_hex",
-                                  "id": "0h7b/o^MLMZvnJ06::MH",
-                                  "inputs": {
-                                    "HEX": {
-                                      "shadow": {
-                                        "type": "text",
-                                        "id": "OGrPr:Uh?sm.pr^Y;ta1",
-                                        "fields": {
-                                          "TEXT": "#230e00"
-                                        }
-                                      }
-                                    }
                                   }
                                 }
                               }
@@ -232,7 +219,7 @@
                             "next": {
                               "block": {
                                 "type": "set_get_mesh_prop",
-                                "id": "dU:*!6aDIC!sc@F%zz9h",
+                                "id": "HSkrOFKgf|Hby:_4M-cq",
                                 "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
                                 "fields": {
                                   "METHOD": "set",
@@ -242,25 +229,27 @@
                                   "MESH": {
                                     "shadow": {
                                       "type": "mesh_selector",
-                                      "id": "b9*Sop#UV5t1I4EgInoB",
+                                      "id": "?^$f+VHQcvT~pXW{KRmJ",
                                       "fields": {
-                                        "NAME": ""
+                                        "NAME": "obj.004"
                                       }
                                     },
                                     "block": {
-                                      "type": "array_element_index",
-                                      "id": "}LYh+lntA7C)@Homz6W}",
+                                      "type": "variables_get",
+                                      "id": "`,V~A|zNhT?X60p:3y!V",
                                       "fields": {
-                                        "ITEM": "element"
+                                        "VAR": {
+                                          "id": "8|x4/2QM^5xCle|g:~9U"
+                                        }
                                       }
                                     }
                                   },
                                   "VALUE": {
                                     "shadow": {
                                       "type": "math_number",
-                                      "id": "M5Oi!y`y%Kxbna5;$jG8",
+                                      "id": "`?GJ%1t?LjLdCGRI)+gJ",
                                       "fields": {
-                                        "NUM": 0.0075
+                                        "NUM": 0.01
                                       }
                                     }
                                   }
@@ -268,7 +257,7 @@
                                 "next": {
                                   "block": {
                                     "type": "set_get_mesh_prop",
-                                    "id": "9aQ2T58%+$_n=N)HQZDL",
+                                    "id": "ow=S#3h]eYaTm^u5OROP",
                                     "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
                                     "fields": {
                                       "METHOD": "set",
@@ -278,23 +267,25 @@
                                       "MESH": {
                                         "shadow": {
                                           "type": "mesh_selector",
-                                          "id": "b9*Sop#UV5t1I4EgInoB",
+                                          "id": "}s.NnkFjJL5l^]ni_NQ9",
                                           "fields": {
-                                            "NAME": ""
+                                            "NAME": "obj.004"
                                           }
                                         },
                                         "block": {
-                                          "type": "array_element_index",
-                                          "id": "!n_+HX+pbk=f!;xMcJQA",
+                                          "type": "variables_get",
+                                          "id": "6dW4(^^94PFR5$mU+d~_",
                                           "fields": {
-                                            "ITEM": "element"
+                                            "VAR": {
+                                              "id": "8|x4/2QM^5xCle|g:~9U"
+                                            }
                                           }
                                         }
                                       },
                                       "VALUE": {
                                         "shadow": {
                                           "type": "logic_boolean",
-                                          "id": "3#]?|D;q%.(I7a73v@]0",
+                                          "id": "J@2nrQ4}A;(t9H:H{xgi",
                                           "fields": {
                                             "BOOL": "TRUE"
                                           }
@@ -318,8 +309,8 @@
       },
       "variables": [
         {
-          "name": "mesh",
-          "id": "0$FzNhriNYt+,Qx1j(EF"
+          "name": "i",
+          "id": "8|x4/2QM^5xCle|g:~9U"
         }
       ]
     }
