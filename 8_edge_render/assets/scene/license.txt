@@ -1,0 +1,11 @@
+Model Information:
+* title:	Building
+* source:	https://sketchfab.com/3d-models/building-4e37f4b1d63b4f7e8e2d6bb5c71512d4
+* author:	Darkkostas25 (https://sketchfab.com/Darkkostas25)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Building" (https://sketchfab.com/3d-models/building-4e37f4b1d63b4f7e8e2d6bb5c71512d4) by Darkkostas25 (https://sketchfab.com/Darkkostas25) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

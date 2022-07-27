@@ -1,0 +1,126 @@
+Exporter version: 2.93.4, Blender version: 3.0.0
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  D:\projects\showroom\assets\scene\
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of node:  objects
+	processing begun of mesh:  Object_3
+		processing begun of material:  soporte_luces
+			processing texture soporte_cuadros_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  173
+		num normals        :  173
+		num tangents       :  692
+		num uvs            :  346
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  88
+	processing begun of mesh:  Object_5
+		processing begun of material:  cuadros
+			processing texture cuadros_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  1384
+		num normals        :  1384
+		num tangents       :  5536
+		num uvs            :  2768
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1578
+	processing begun of mesh:  Object_6
+		processing begun of material:  deco_ventana
+			processing texture deco_ventana_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  3100
+		num normals        :  3100
+		num tangents       :  12400
+		num uvs            :  6200
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1536
+	processing begun of mesh:  Object_7
+		processing begun of material:  luces
+		processing begun of material:  Material.001
+			processing texture luces_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			processing texture luces_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  showroom.Multimaterial#0
+		Custom split normals with tangents being used
+		num positions      :  6532
+		num normals        :  6532
+		num tangents       :  26128
+		num uvs            :  13064
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  7872
+	processing begun of mesh:  Object_8
+		processing begun of material:  paredes
+			processing texture paredes_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  218
+	processing begun of mesh:  Object_9
+		processing begun of material:  soporte_cuadros
+			processing texture soporte_cuadros_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  1104
+		num normals        :  1104
+		num tangents       :  4416
+		num uvs            :  2208
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  508
+	processing begun of mesh:  ground
+		processing begun of material:  suelo_techo
+			processing texture suelo_techo_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  16
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  top
+		processing begun of material:  suelo_techo
+		registered as also a user of material:  suelo_techo
+		Custom split normals with tangents being used
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  16
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+========= Writing of JSON file started =========
+	writing mesh:  Object_3
+	writing mesh:  Object_5
+	writing mesh:  Object_6
+	writing mesh:  Object_7
+	writing mesh:  Object_8
+	writing mesh:  Object_9
+	writing mesh:  ground
+	writing mesh:  top
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 2.3439 secs

@@ -1,0 +1,1160 @@
+{
+  "main": {
+    "type": "block",
+    "data": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "set_scene_prop",
+            "id": "xD=bT|YBntLF`M`la]o9",
+            "x": 410,
+            "y": 170,
+            "fields": {
+              "KEY": "collisionsEnabled"
+            },
+            "inputs": {
+              "VALUE": {
+                "shadow": {
+                  "type": "logic_boolean",
+                  "id": "=Me2.{C,Vn4hvtG[}3f5",
+                  "fields": {
+                    "BOOL": "TRUE"
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "set_scene_prop",
+                "id": "cS~Y9stnXXH{Ie3eT|[V",
+                "fields": {
+                  "KEY": "gravity"
+                },
+                "inputs": {
+                  "VALUE": {
+                    "shadow": {
+                      "type": "field_vector3",
+                      "id": "y!df6ntQkf!)VcP6c4[W",
+                      "fields": {
+                        "X": 0,
+                        "Y": -9.81,
+                        "Z": 0
+                      }
+                    },
+                    "block": {
+                      "type": "math_vector3",
+                      "id": "4{c-tW7-4+423lj$fBa3",
+                      "inputs": {
+                        "X": {
+                          "shadow": {
+                            "type": "math_number",
+                            "id": "pk)joASPB)S0t=e6mrBr",
+                            "fields": {
+                              "NUM": 0
+                            }
+                          }
+                        },
+                        "Y": {
+                          "shadow": {
+                            "type": "math_number",
+                            "id": "a#!giEzXgir]I2e!c`!-",
+                            "fields": {
+                              "NUM": 0
+                            }
+                          },
+                          "block": {
+                            "type": "math_arithmetic",
+                            "id": "wt.nNnZ/z!Oh=ff@hYjY",
+                            "fields": {
+                              "OP": "DIVIDE"
+                            },
+                            "inputs": {
+                              "A": {
+                                "shadow": {
+                                  "type": "math_number",
+                                  "id": "HEM*uSXC#GM%UOO:Hq}]",
+                                  "fields": {
+                                    "NUM": -9.81
+                                  }
+                                }
+                              },
+                              "B": {
+                                "shadow": {
+                                  "type": "math_number",
+                                  "id": "shdm@d0M*=U4SeigZlsc",
+                                  "fields": {
+                                    "NUM": 60
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Z": {
+                          "shadow": {
+                            "type": "math_number",
+                            "id": "geE*fn,xIT%DMqm-6@]C",
+                            "fields": {
+                              "NUM": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "next": {
+                  "block": {
+                    "type": "scene_create_default_environment",
+                    "id": "E8q}:ql96SJZHZ0wPGWl",
+                    "inputs": {
+                      "OPTIONS": {
+                        "shadow": {
+                          "type": "empty_object",
+                          "id": "CY]9I$}?}T)PFAxx}pNW"
+                        },
+                        "block": {
+                          "type": "object_create",
+                          "id": "Wa]io4*.o?bfH=h$wM3l",
+                          "fields": {
+                            "EMPTY": false
+                          },
+                          "inputs": {
+                            "ITEM": {
+                              "block": {
+                                "type": "scene_create_default_environment_option",
+                                "id": "wD:St:P.Y@o1NQMELA5s",
+                                "fields": {
+                                  "KEY": "createGround"
+                                },
+                                "inputs": {
+                                  "VALUE": {
+                                    "shadow": {
+                                      "type": "logic_boolean",
+                                      "id": "pF#YbH=UCE037bid===D",
+                                      "fields": {
+                                        "BOOL": "FALSE"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "variables_set",
+                        "id": "90}?Y:j_CBT0r[~MJG-y",
+                        "fields": {
+                          "VAR": {
+                            "id": "UgMa*TtW$A(@5MWbL@`h"
+                          }
+                        },
+                        "inputs": {
+                          "VALUE": {
+                            "block": {
+                              "type": "create_camera",
+                              "id": "hDc)YUBjNhn#tL.UYq@!",
+                              "fields": {
+                                "TYPE": "UniversalCamera"
+                              },
+                              "inputs": {
+                                "NAME": {
+                                  "shadow": {
+                                    "type": "text",
+                                    "id": "g}3T,i$*}__v//XJFl`C",
+                                    "fields": {
+                                      "TEXT": "fpvCamera"
+                                    }
+                                  }
+                                },
+                                "POSITION": {
+                                  "shadow": {
+                                    "type": "field_vector3",
+                                    "id": "I_jZ-|`^a{f65[~W?.^=",
+                                    "fields": {
+                                      "X": 0,
+                                      "Y": 2,
+                                      "Z": -7
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "execute_tab",
+                            "id": "N_Jiy6PhhybpH1#8#u{N",
+                            "extraState": "<mutation tabTitle=\"fpvCamera\"></mutation>",
+                            "fields": {
+                              "TAB": "fpvCamera"
+                            },
+                            "inputs": {
+                              "TAB_ARG": {
+                                "block": {
+                                  "type": "variables_get",
+                                  "id": "hr2VAY88XZ9,1RQO}h%0",
+                                  "fields": {
+                                    "VAR": {
+                                      "id": "UgMa*TtW$A(@5MWbL@`h"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "type": "scene_assets_manager",
+                                "id": "$#?j/Z}B=BKN|w$PnEo1",
+                                "fields": {
+                                  "USE_DEFAULT_PRELOADER": false
+                                },
+                                "inputs": {
+                                  "LOAD_ASSETS": {
+                                    "block": {
+                                      "type": "variables_set",
+                                      "id": "H+04!i5^`}1Qg)V4,j8.",
+                                      "fields": {
+                                        "VAR": {
+                                          "id": "[UatGVUAJmNXYL3/W4#+"
+                                        }
+                                      },
+                                      "inputs": {
+                                        "VALUE": {
+                                          "block": {
+                                            "type": "scene_load_asset",
+                                            "id": ":%Q$p+_zrZ9I|e!+vdh2",
+                                            "fields": {
+                                              "TYPE": "addMeshTask"
+                                            },
+                                            "inputs": {
+                                              "ASSET_NAME": {
+                                                "shadow": {
+                                                  "type": "text",
+                                                  "id": "S.rL^i@q9}J`@$_!p=w#",
+                                                  "fields": {
+                                                    "TEXT": "loadAsset"
+                                                  }
+                                                }
+                                              },
+                                              "URL": {
+                                                "shadow": {
+                                                  "type": "text",
+                                                  "id": "r1YS:g8$kS4*y%PpLDbq",
+                                                  "fields": {
+                                                    "TEXT": "./assets/scene/fpv.glb"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "ON_FINISH": {
+                                    "block": {
+                                      "type": "variables_set",
+                                      "id": "Q-Ua;]|soGfJL3@.bF*=",
+                                      "fields": {
+                                        "VAR": {
+                                          "id": "(qQpr1RSt6}Ol5[Fr9N/"
+                                        }
+                                      },
+                                      "inputs": {
+                                        "VALUE": {
+                                          "block": {
+                                            "type": "create_material",
+                                            "id": "XwUJ+YEVg]/e}xP7*x=0",
+                                            "fields": {
+                                              "TYPE": "GridMaterial"
+                                            },
+                                            "inputs": {
+                                              "NAME": {
+                                                "shadow": {
+                                                  "type": "text",
+                                                  "id": ";cBf}^zSmsStyz*T~)/n",
+                                                  "fields": {
+                                                    "TEXT": "GridMaterial"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "set_get_material_prop",
+                                          "id": "qc8SEH|iM.9JlQ@XH7!v",
+                                          "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                          "fields": {
+                                            "METHOD": "set",
+                                            "TYPE": "GridMaterial",
+                                            "KEY": "mainColor"
+                                          },
+                                          "inputs": {
+                                            "MATERIAL": {
+                                              "block": {
+                                                "type": "variables_get",
+                                                "id": "sLAB)Z@1~egj[5BpHeK~",
+                                                "fields": {
+                                                  "VAR": {
+                                                    "id": "(qQpr1RSt6}Ol5[Fr9N/"
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "VALUE": {
+                                              "shadow": {
+                                                "type": "field_color3",
+                                                "id": "D87z{yAK^68^UzRa.;5L",
+                                                "fields": {
+                                                  "R": 88,
+                                                  "G": 88,
+                                                  "B": 88
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "next": {
+                                            "block": {
+                                              "type": "set_get_material_prop",
+                                              "id": "MRcOP~wO:x1E=_rx4tzW",
+                                              "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                              "fields": {
+                                                "METHOD": "set",
+                                                "TYPE": "GridMaterial",
+                                                "KEY": "gridRatio"
+                                              },
+                                              "inputs": {
+                                                "MATERIAL": {
+                                                  "block": {
+                                                    "type": "variables_get",
+                                                    "id": "e+dZz+Hm`hbRgKRmw5TZ",
+                                                    "fields": {
+                                                      "VAR": {
+                                                        "id": "(qQpr1RSt6}Ol5[Fr9N/"
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "VALUE": {
+                                                  "shadow": {
+                                                    "type": "math_number",
+                                                    "id": "lgz)fu#Sw|(I/R-;y]gA",
+                                                    "fields": {
+                                                      "NUM": 12
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "next": {
+                                                "block": {
+                                                  "type": "array_for_each",
+                                                  "id": "y8gj_0ywS38W_)0q;8l]",
+                                                  "inputs": {
+                                                    "LIST": {
+                                                      "block": {
+                                                        "type": "scene_get_loaded_from_asset",
+                                                        "id": "~_ya1YOO2hc@#-cu)g@7",
+                                                        "fields": {
+                                                          "TYPE": "meshes"
+                                                        },
+                                                        "inputs": {
+                                                          "ASSET": {
+                                                            "block": {
+                                                              "type": "variables_get",
+                                                              "id": "[5%s_#OFHsl~h!y/%Q{k",
+                                                              "fields": {
+                                                                "VAR": {
+                                                                  "id": "[UatGVUAJmNXYL3/W4#+"
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "DO_STATEMENT": {
+                                                      "block": {
+                                                        "type": "set_get_mesh_prop",
+                                                        "id": "nQAZ6LRm_;WP9|8w~9TQ",
+                                                        "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                        "fields": {
+                                                          "METHOD": "set",
+                                                          "KEY": "checkCollisions"
+                                                        },
+                                                        "inputs": {
+                                                          "MESH": {
+                                                            "shadow": {
+                                                              "type": "mesh_selector",
+                                                              "id": "0T:-eaj!3EH+9^a26qN~",
+                                                              "fields": {
+                                                                "NAME": ""
+                                                              }
+                                                            },
+                                                            "block": {
+                                                              "type": "array_element_index",
+                                                              "id": "qf`Df#6^{/=LQV~fAJ%F",
+                                                              "fields": {
+                                                                "ITEM": "element"
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE": {
+                                                            "shadow": {
+                                                              "type": "logic_boolean",
+                                                              "id": "#S]Y(vI*1UD?!d{;Z-)Y",
+                                                              "fields": {
+                                                                "BOOL": "TRUE"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "keyboard_event",
+                                    "id": "_lDUUlU|iC#e+?RuHKW2",
+                                    "fields": {
+                                      "TYPE": "KEYDOWN",
+                                      "REPEAT": false
+                                    },
+                                    "inputs": {
+                                      "DO_CB": {
+                                        "block": {
+                                          "type": "controls_if",
+                                          "id": "3$|hdS33W~+:hr/XyAu7",
+                                          "extraState": {
+                                            "elseIfCount": 1
+                                          },
+                                          "inputs": {
+                                            "IF0": {
+                                              "block": {
+                                                "type": "logic_compare",
+                                                "id": "YwM?-7#k$ciBZ%GgN5WM",
+                                                "fields": {
+                                                  "OP": "EQ"
+                                                },
+                                                "inputs": {
+                                                  "A": {
+                                                    "block": {
+                                                      "type": "get_key_input",
+                                                      "id": "gY;eD+-Cy1|yVF^7Qb*i",
+                                                      "fields": {
+                                                        "KEY_INPUT": "key"
+                                                      }
+                                                    }
+                                                  },
+                                                  "B": {
+                                                    "block": {
+                                                      "type": "text",
+                                                      "id": "S:Yh0%I47S|=i5Nx*lFj",
+                                                      "fields": {
+                                                        "TEXT": "Enter"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "DO0": {
+                                              "block": {
+                                                "type": "set_get_active_camera",
+                                                "id": "rI`yF=dAo(;Yi[imzRur",
+                                                "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                "fields": {
+                                                  "METHOD": "set"
+                                                },
+                                                "inputs": {
+                                                  "VALUE": {
+                                                    "shadow": {
+                                                      "type": "camera_selector",
+                                                      "id": "iyk*Hnh5Pi@909bX-m%F",
+                                                      "fields": {
+                                                        "NAME": ""
+                                                      }
+                                                    },
+                                                    "block": {
+                                                      "type": "variables_get",
+                                                      "id": "?d]NiHD2Fz!#r-;uxe3_",
+                                                      "fields": {
+                                                        "VAR": {
+                                                          "id": "UgMa*TtW$A(@5MWbL@`h"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "app_fullscreen",
+                                                    "id": "`34b9FT8k3wFw9e!w!t/",
+                                                    "fields": {
+                                                      "POINTER_LOCK": true
+                                                    },
+                                                    "inputs": {
+                                                      "ENABLED": {
+                                                        "shadow": {
+                                                          "type": "logic_boolean",
+                                                          "id": "$1~$o3PuD0]8B-uaJV+)",
+                                                          "fields": {
+                                                            "BOOL": "TRUE"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "IF1": {
+                                              "block": {
+                                                "type": "logic_compare",
+                                                "id": "P~/Ax1`cG~myuHh,ihMp",
+                                                "fields": {
+                                                  "OP": "EQ"
+                                                },
+                                                "inputs": {
+                                                  "A": {
+                                                    "block": {
+                                                      "type": "get_key_input",
+                                                      "id": "*GJSM;%Z3j#)N$dlCg$z",
+                                                      "fields": {
+                                                        "KEY_INPUT": "key"
+                                                      }
+                                                    }
+                                                  },
+                                                  "B": {
+                                                    "block": {
+                                                      "type": "text",
+                                                      "id": "7s4QLYE_~3j:h3^%PHMe",
+                                                      "fields": {
+                                                        "TEXT": "Escape"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "DO1": {
+                                              "block": {
+                                                "type": "set_get_active_camera",
+                                                "id": "rWJH%[w.{|?Me4V(`[}y",
+                                                "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                "fields": {
+                                                  "METHOD": "set"
+                                                },
+                                                "inputs": {
+                                                  "VALUE": {
+                                                    "shadow": {
+                                                      "type": "camera_selector",
+                                                      "id": "iyk*Hnh5Pi@909bX-m%F",
+                                                      "fields": {
+                                                        "NAME": "defaultCamera"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "variables": [
+        {
+          "name": "fpvCamera",
+          "id": "UgMa*TtW$A(@5MWbL@`h"
+        },
+        {
+          "name": "loadMesh",
+          "id": "[UatGVUAJmNXYL3/W4#+"
+        },
+        {
+          "name": "gridMat",
+          "id": "(qQpr1RSt6}Ol5[Fr9N/"
+        }
+      ]
+    }
+  },
+  "fpvCamera": {
+    "type": "block",
+    "data": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "variables_set",
+            "id": "RQZA_]tjArxUJ#qr.cn:",
+            "x": 170,
+            "y": -30,
+            "fields": {
+              "VAR": {
+                "id": "UgMa*TtW$A(@5MWbL@`h"
+              }
+            },
+            "inputs": {
+              "VALUE": {
+                "block": {
+                  "type": "get_tab_arg",
+                  "id": "bJ8)64oIPf/hYzrRs9~G"
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "set_get_camera_prop",
+                "id": "+feb,7P)4oN3K7[GnZm;",
+                "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                "fields": {
+                  "METHOD": "set",
+                  "TYPE": "UniversalCamera",
+                  "KEY": "applyGravity"
+                },
+                "inputs": {
+                  "CAMERA": {
+                    "shadow": {
+                      "type": "camera_selector",
+                      "id": "h=]h:8x_2Mj(XSf)TWbz",
+                      "fields": {
+                        "NAME": ""
+                      }
+                    },
+                    "block": {
+                      "type": "variables_get",
+                      "id": "TcW3#VfN8XK.r$iOL,k(",
+                      "fields": {
+                        "VAR": {
+                          "id": "UgMa*TtW$A(@5MWbL@`h"
+                        }
+                      }
+                    }
+                  },
+                  "VALUE": {
+                    "shadow": {
+                      "type": "logic_boolean",
+                      "id": "#W_~);|^XD1p?Dq25r^f",
+                      "fields": {
+                        "BOOL": "TRUE"
+                      }
+                    }
+                  }
+                },
+                "next": {
+                  "block": {
+                    "type": "set_get_camera_prop",
+                    "id": "8rChl/5:U`tvIKoij$Q;",
+                    "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                    "fields": {
+                      "METHOD": "set",
+                      "TYPE": "UniversalCamera",
+                      "KEY": "checkCollisions"
+                    },
+                    "inputs": {
+                      "CAMERA": {
+                        "shadow": {
+                          "type": "camera_selector",
+                          "id": "h=]h:8x_2Mj(XSf)TWbz",
+                          "fields": {
+                            "NAME": ""
+                          }
+                        },
+                        "block": {
+                          "type": "variables_get",
+                          "id": "MM/d)GpQ6V2,OMn7%2yb",
+                          "fields": {
+                            "VAR": {
+                              "id": "UgMa*TtW$A(@5MWbL@`h"
+                            }
+                          }
+                        }
+                      },
+                      "VALUE": {
+                        "shadow": {
+                          "type": "logic_boolean",
+                          "id": "t|(H9=SD?io)cSYXs1d{",
+                          "fields": {
+                            "BOOL": "TRUE"
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "set_get_camera_prop",
+                        "id": "i}1cRO8hn3,^:^c)yMCL",
+                        "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                        "fields": {
+                          "METHOD": "set",
+                          "TYPE": "UniversalCamera",
+                          "KEY": "ellipsoid"
+                        },
+                        "inputs": {
+                          "CAMERA": {
+                            "shadow": {
+                              "type": "camera_selector",
+                              "id": "h=]h:8x_2Mj(XSf)TWbz",
+                              "fields": {
+                                "NAME": ""
+                              }
+                            },
+                            "block": {
+                              "type": "variables_get",
+                              "id": "wDdau#hxXE.5FH~;F)nj",
+                              "fields": {
+                                "VAR": {
+                                  "id": "UgMa*TtW$A(@5MWbL@`h"
+                                }
+                              }
+                            }
+                          },
+                          "VALUE": {
+                            "shadow": {
+                              "type": "field_vector3",
+                              "id": "eP^J9pUO%2xDos;@]BK+",
+                              "fields": {
+                                "X": 1,
+                                "Y": 1.5,
+                                "Z": 1
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "set_get_camera_prop",
+                            "id": "{7PZD6!r4*|uWh$^mcaX",
+                            "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                            "fields": {
+                              "METHOD": "set",
+                              "TYPE": "UniversalCamera",
+                              "KEY": "minZ"
+                            },
+                            "inputs": {
+                              "CAMERA": {
+                                "shadow": {
+                                  "type": "camera_selector",
+                                  "id": "h=]h:8x_2Mj(XSf)TWbz",
+                                  "fields": {
+                                    "NAME": ""
+                                  }
+                                },
+                                "block": {
+                                  "type": "variables_get",
+                                  "id": "pe;5G3;l(yMd3g:?fHbx",
+                                  "fields": {
+                                    "VAR": {
+                                      "id": "UgMa*TtW$A(@5MWbL@`h"
+                                    }
+                                  }
+                                }
+                              },
+                              "VALUE": {
+                                "shadow": {
+                                  "type": "math_number",
+                                  "id": "j*v7Ltz+FgMs/WW/~#tR",
+                                  "fields": {
+                                    "NUM": 0.5
+                                  }
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "type": "set_get_camera_prop",
+                                "id": "wHq(^%%|`+=(k9b_._8N",
+                                "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                "fields": {
+                                  "METHOD": "set",
+                                  "TYPE": "UniversalCamera",
+                                  "KEY": "speed"
+                                },
+                                "inputs": {
+                                  "CAMERA": {
+                                    "shadow": {
+                                      "type": "camera_selector",
+                                      "id": "h=]h:8x_2Mj(XSf)TWbz",
+                                      "fields": {
+                                        "NAME": ""
+                                      }
+                                    },
+                                    "block": {
+                                      "type": "variables_get",
+                                      "id": "mYM;:*T8NL,W?YUNVPP+",
+                                      "fields": {
+                                        "VAR": {
+                                          "id": "UgMa*TtW$A(@5MWbL@`h"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "VALUE": {
+                                    "shadow": {
+                                      "type": "math_number",
+                                      "id": "AF(jz~dwPR+An0;]j}u{",
+                                      "fields": {
+                                        "NUM": 0.4
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "set_get_camera_prop",
+                                    "id": "%7LO_+U[mqZyH`Y[UWqi",
+                                    "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                    "fields": {
+                                      "METHOD": "set",
+                                      "TYPE": "UniversalCamera",
+                                      "KEY": "angularSensibility"
+                                    },
+                                    "inputs": {
+                                      "CAMERA": {
+                                        "shadow": {
+                                          "type": "camera_selector",
+                                          "id": "h=]h:8x_2Mj(XSf)TWbz",
+                                          "fields": {
+                                            "NAME": ""
+                                          }
+                                        },
+                                        "block": {
+                                          "type": "variables_get",
+                                          "id": "A(gX]/x?RXfen#~;4l`L",
+                                          "fields": {
+                                            "VAR": {
+                                              "id": "UgMa*TtW$A(@5MWbL@`h"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "VALUE": {
+                                        "shadow": {
+                                          "type": "math_number",
+                                          "id": "jto0[Y_$w@$Kp,,=koL[",
+                                          "fields": {
+                                            "NUM": 5000
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "set_get_camera_prop",
+                                        "id": "PybOJb]BPGXLIs5uPA/]",
+                                        "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                        "fields": {
+                                          "METHOD": "set",
+                                          "TYPE": "UniversalCamera",
+                                          "KEY": "keysUp"
+                                        },
+                                        "inputs": {
+                                          "CAMERA": {
+                                            "shadow": {
+                                              "type": "camera_selector",
+                                              "id": "h=]h:8x_2Mj(XSf)TWbz",
+                                              "fields": {
+                                                "NAME": ""
+                                              }
+                                            },
+                                            "block": {
+                                              "type": "variables_get",
+                                              "id": "f8X59)houdNEDS^v.2Dq",
+                                              "fields": {
+                                                "VAR": {
+                                                  "id": "UgMa*TtW$A(@5MWbL@`h"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "VALUE": {
+                                            "shadow": {
+                                              "type": "empty_array",
+                                              "id": "}B00Q2[~,##FA}c^A5Z]"
+                                            },
+                                            "block": {
+                                              "type": "array_create",
+                                              "id": "qU_WDSk:?jkHAR7S+ptr",
+                                              "fields": {
+                                                "EMPTY": false
+                                              },
+                                              "inputs": {
+                                                "ITEM": {
+                                                  "block": {
+                                                    "type": "array_create_element",
+                                                    "id": "*p_2fOBv*2:aell;:/=Q",
+                                                    "inputs": {
+                                                      "ELEMENT": {
+                                                        "block": {
+                                                          "type": "math_number",
+                                                          "id": "PdR8=^y`U)d;H-|zb8.+",
+                                                          "fields": {
+                                                            "NUM": 87
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "set_get_camera_prop",
+                                            "id": "^I!yBQeW57hq1:pjL[Oq",
+                                            "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                            "fields": {
+                                              "METHOD": "set",
+                                              "TYPE": "UniversalCamera",
+                                              "KEY": "keysDown"
+                                            },
+                                            "inputs": {
+                                              "CAMERA": {
+                                                "shadow": {
+                                                  "type": "camera_selector",
+                                                  "id": "h=]h:8x_2Mj(XSf)TWbz",
+                                                  "fields": {
+                                                    "NAME": ""
+                                                  }
+                                                },
+                                                "block": {
+                                                  "type": "variables_get",
+                                                  "id": "rRHae~j;Byr[5{wTCM.D",
+                                                  "fields": {
+                                                    "VAR": {
+                                                      "id": "UgMa*TtW$A(@5MWbL@`h"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "VALUE": {
+                                                "shadow": {
+                                                  "type": "empty_array",
+                                                  "id": "bp=?BELeYRp-Fp|pa-CZ"
+                                                },
+                                                "block": {
+                                                  "type": "array_create",
+                                                  "id": "%JOAqOxV1kyIa/QrauwS",
+                                                  "fields": {
+                                                    "EMPTY": false
+                                                  },
+                                                  "inputs": {
+                                                    "ITEM": {
+                                                      "block": {
+                                                        "type": "array_create_element",
+                                                        "id": ",i}]N*D53FmOjWg$nL51",
+                                                        "inputs": {
+                                                          "ELEMENT": {
+                                                            "block": {
+                                                              "type": "math_number",
+                                                              "id": "VIgR3!/!772l%0fnr8Gy",
+                                                              "fields": {
+                                                                "NUM": 83
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "set_get_camera_prop",
+                                                "id": "]zr+dMs6E36_Lupqs9ml",
+                                                "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                "fields": {
+                                                  "METHOD": "set",
+                                                  "TYPE": "UniversalCamera",
+                                                  "KEY": "keysLeft"
+                                                },
+                                                "inputs": {
+                                                  "CAMERA": {
+                                                    "shadow": {
+                                                      "type": "camera_selector",
+                                                      "id": "h=]h:8x_2Mj(XSf)TWbz",
+                                                      "fields": {
+                                                        "NAME": ""
+                                                      }
+                                                    },
+                                                    "block": {
+                                                      "type": "variables_get",
+                                                      "id": ".Q0HyPu(#ubhL0DK{52/",
+                                                      "fields": {
+                                                        "VAR": {
+                                                          "id": "UgMa*TtW$A(@5MWbL@`h"
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE": {
+                                                    "shadow": {
+                                                      "type": "empty_array",
+                                                      "id": "K-=91IG]]jlxx?2TlyO?"
+                                                    },
+                                                    "block": {
+                                                      "type": "array_create",
+                                                      "id": "D!9iMb)t,T.Zf(uZyy]k",
+                                                      "fields": {
+                                                        "EMPTY": false
+                                                      },
+                                                      "inputs": {
+                                                        "ITEM": {
+                                                          "block": {
+                                                            "type": "array_create_element",
+                                                            "id": ":`%+g:=$rBTq)qCp(w=)",
+                                                            "inputs": {
+                                                              "ELEMENT": {
+                                                                "block": {
+                                                                  "type": "math_number",
+                                                                  "id": "Cd(r7hX;s2wHx3=1Hh=)",
+                                                                  "fields": {
+                                                                    "NUM": 65
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "set_get_camera_prop",
+                                                    "id": "dV?7On)c#LVVY)GU$NCs",
+                                                    "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                    "fields": {
+                                                      "METHOD": "set",
+                                                      "TYPE": "UniversalCamera",
+                                                      "KEY": "keysRight"
+                                                    },
+                                                    "inputs": {
+                                                      "CAMERA": {
+                                                        "shadow": {
+                                                          "type": "camera_selector",
+                                                          "id": "h=]h:8x_2Mj(XSf)TWbz",
+                                                          "fields": {
+                                                            "NAME": ""
+                                                          }
+                                                        },
+                                                        "block": {
+                                                          "type": "variables_get",
+                                                          "id": "/2UIlEwU7/)qtNjOec!r",
+                                                          "fields": {
+                                                            "VAR": {
+                                                              "id": "UgMa*TtW$A(@5MWbL@`h"
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE": {
+                                                        "shadow": {
+                                                          "type": "empty_array",
+                                                          "id": "W|VltnP1K/GHr5@Sl,tX"
+                                                        },
+                                                        "block": {
+                                                          "type": "array_create",
+                                                          "id": "c`5fHr!`aQb/Z*{5$6P4",
+                                                          "fields": {
+                                                            "EMPTY": false
+                                                          },
+                                                          "inputs": {
+                                                            "ITEM": {
+                                                              "block": {
+                                                                "type": "array_create_element",
+                                                                "id": "]+5RX9}gF(;CY@Q@FPWC",
+                                                                "inputs": {
+                                                                  "ELEMENT": {
+                                                                    "block": {
+                                                                      "type": "math_number",
+                                                                      "id": "A,;s6;xT)__aIQ~bu(%$",
+                                                                      "fields": {
+                                                                        "NUM": 68
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "variables": [
+        {
+          "name": "fpvCamera",
+          "id": "UgMa*TtW$A(@5MWbL@`h"
+        }
+      ]
+    }
+  },
+  "setting": {
+    "data": {
+      "lang": "en",
+      "gutterPosition": "44",
+      "openInspector": true
+    }
+  }
+}

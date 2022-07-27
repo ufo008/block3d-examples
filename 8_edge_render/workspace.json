@@ -1,0 +1,1415 @@
+{
+  "main": {
+    "type": "block",
+    "data": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "scene_assets_manager",
+            "id": "(8upOF8zi:t,t%fWuT6_",
+            "x": 450,
+            "y": 446,
+            "fields": {
+              "USE_DEFAULT_PRELOADER": false
+            },
+            "inputs": {
+              "LOAD_ASSETS": {
+                "block": {
+                  "type": "advanced_connect",
+                  "id": "Pmr@y{.;G|dP8;x4pGt`",
+                  "inputs": {
+                    "INPUT": {
+                      "block": {
+                        "type": "scene_load_asset",
+                        "id": "3c2f^.ml^])4n]m^,}m4",
+                        "fields": {
+                          "TYPE": "addMeshTask"
+                        },
+                        "inputs": {
+                          "ASSET_NAME": {
+                            "shadow": {
+                              "type": "text",
+                              "id": "((Q|*]xF|)e^Z,fe9flS",
+                              "fields": {
+                                "TEXT": "load"
+                              }
+                            }
+                          },
+                          "URL": {
+                            "shadow": {
+                              "type": "text",
+                              "id": "6Fy$V)z:,L-:vWDB.h=v",
+                              "fields": {
+                                "TEXT": "assets/scene/scene.gltf"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ON_FINISH": {
+                "block": {
+                  "type": "execute_tab",
+                  "id": "F3Ud+`ot;MaOENfhPlHq",
+                  "extraState": "<mutation tabTitle=\"init\"></mutation>",
+                  "fields": {
+                    "TAB": "init"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "execute_tab",
+                      "id": "mb5n!LE!I+T^y9Gy+y$A",
+                      "extraState": "<mutation tabTitle=\"pane\"></mutation>",
+                      "fields": {
+                        "TAB": "pane"
+                      },
+                      "next": {
+                        "block": {
+                          "type": "set_get_mesh_transform",
+                          "id": "psRtAQ2=.IwN?3VY3j05",
+                          "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                          "fields": {
+                            "METHOD": "set",
+                            "TRANSFORM": "scaling",
+                            "XYZ": "xyz"
+                          },
+                          "inputs": {
+                            "MESH": {
+                              "shadow": {
+                                "type": "mesh_selector",
+                                "id": "GONGZg4K{$x%1Xk@rdfL",
+                                "fields": {
+                                  "NAME": "__root__"
+                                }
+                              }
+                            },
+                            "VALUE": {
+                              "shadow": {
+                                "type": "field_vector3",
+                                "id": "}%I3VQ?/b,lbuc[6,8k#",
+                                "fields": {
+                                  "X": -1,
+                                  "Y": 1,
+                                  "Z": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "init": {
+    "type": "block",
+    "data": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "variables_set",
+            "id": "(,djorw=o`LtUtGek=b8",
+            "x": 388,
+            "y": 350,
+            "fields": {
+              "VAR": {
+                "id": "cB;*v3;IEr@ikm_=`?U3"
+              }
+            },
+            "inputs": {
+              "VALUE": {
+                "block": {
+                  "type": "set_get_active_camera",
+                  "id": "0furCwZ/j|j:`OV]--D9",
+                  "extraState": "<mutation statement=\"false\" valueInput=\"false\"></mutation>",
+                  "fields": {
+                    "METHOD": "get"
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "set_get_camera_prop",
+                "id": ",.AU@TrObdS,{6U.wl.I",
+                "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                "fields": {
+                  "METHOD": "set",
+                  "TYPE": "ArcRotateCamera",
+                  "KEY": "radius"
+                },
+                "inputs": {
+                  "CAMERA": {
+                    "shadow": {
+                      "type": "camera_selector",
+                      "id": "-|+X!X~*IV3_aG!Wn5?+",
+                      "fields": {
+                        "NAME": ""
+                      }
+                    },
+                    "block": {
+                      "type": "variables_get",
+                      "id": "]HAsHB;?uk`8M^,5j:n%",
+                      "fields": {
+                        "VAR": {
+                          "id": "cB;*v3;IEr@ikm_=`?U3"
+                        }
+                      }
+                    }
+                  },
+                  "VALUE": {
+                    "shadow": {
+                      "type": "math_number",
+                      "id": ",,Yx~vYX`l|:*A)]-)B~",
+                      "fields": {
+                        "NUM": 40
+                      }
+                    }
+                  }
+                },
+                "next": {
+                  "block": {
+                    "type": "set_get_camera_prop",
+                    "id": "fzuOvlGwu?q4RwyQ07c/",
+                    "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                    "fields": {
+                      "METHOD": "set",
+                      "TYPE": "ArcRotateCamera",
+                      "KEY": "targetScreenOffset"
+                    },
+                    "inputs": {
+                      "CAMERA": {
+                        "shadow": {
+                          "type": "camera_selector",
+                          "id": "-|+X!X~*IV3_aG!Wn5?+",
+                          "fields": {
+                            "NAME": ""
+                          }
+                        },
+                        "block": {
+                          "type": "variables_get",
+                          "id": "x@EwY=qokM(,H1vT-kAl",
+                          "fields": {
+                            "VAR": {
+                              "id": "cB;*v3;IEr@ikm_=`?U3"
+                            }
+                          }
+                        }
+                      },
+                      "VALUE": {
+                        "shadow": {
+                          "type": "field_vector2",
+                          "id": ":H(Yz}~D~=lL1;`F{;hK",
+                          "fields": {
+                            "X": 0,
+                            "Y": -5
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "scene_update_default_environment",
+                        "id": "bfMS$@4?AscCXPE;NlZ(",
+                        "inputs": {
+                          "OPTIONS": {
+                            "shadow": {
+                              "type": "empty_object",
+                              "id": "$im/n.JCAgtbg8kwn5wo"
+                            },
+                            "block": {
+                              "type": "object_create",
+                              "id": "gA7%y:Io:$]d8,/(~L{0",
+                              "fields": {
+                                "EMPTY": false
+                              },
+                              "inputs": {
+                                "ITEM": {
+                                  "block": {
+                                    "type": "scene_create_default_environment_option",
+                                    "id": "jXjZY9n0|0.[5f1d/!Pd",
+                                    "fields": {
+                                      "KEY": "createGround"
+                                    },
+                                    "inputs": {
+                                      "VALUE": {
+                                        "shadow": {
+                                          "type": "logic_boolean",
+                                          "id": "oTz8DbGpm`,H;6trlF]L",
+                                          "fields": {
+                                            "BOOL": "FALSE"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "scene_create_default_environment_option",
+                                        "id": "xR2o,G[8r2MlX.x6a.MR",
+                                        "fields": {
+                                          "KEY": "createSkybox"
+                                        },
+                                        "inputs": {
+                                          "VALUE": {
+                                            "shadow": {
+                                              "type": "logic_boolean",
+                                              "id": "Ri$)~,BGdRM/VHl1P/mS",
+                                              "fields": {
+                                                "BOOL": "FALSE"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "variables": [
+        {
+          "name": "camera",
+          "id": "cB;*v3;IEr@ikm_=`?U3"
+        }
+      ]
+    }
+  },
+  "pane": {
+    "type": "block",
+    "data": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "variables_set",
+            "id": "rQF`GKa[wa/YNGBwg%O3",
+            "x": 10,
+            "y": 10,
+            "fields": {
+              "VAR": {
+                "id": "rMeG@8/^VScZ%J{r(lpL"
+              }
+            },
+            "inputs": {
+              "VALUE": {
+                "block": {
+                  "type": "get_material_by_mesh",
+                  "id": "}p}1EgE|U^Gd$R|mAED[",
+                  "inputs": {
+                    "MESH": {
+                      "shadow": {
+                        "type": "mesh_selector",
+                        "id": "lGsMgZkCuOqlD$8qlR:`",
+                        "fields": {
+                          "NAME": "building"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "advanced_comment",
+                "id": "p19T_PAz;%v-og${BAbx",
+                "fields": {
+                  "INPUT": "默认"
+                },
+                "next": {
+                  "block": {
+                    "type": "set_scene_prop",
+                    "id": "nztbhFhxm,pRJ|7o7Sue",
+                    "fields": {
+                      "KEY": "clearColor"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "shadow": {
+                          "type": "field_color4",
+                          "id": "C*hkGeDzxQZE0DQr|9DE",
+                          "fields": {
+                            "R": 100,
+                            "G": 100,
+                            "B": 200,
+                            "A": 1
+                          }
+                        },
+                        "block": {
+                          "type": "material_color4_from_hex",
+                          "id": "hO1wG]/hukn;Jv@r;rh3",
+                          "inputs": {
+                            "HEX": {
+                              "shadow": {
+                                "type": "text",
+                                "id": ":P*}:Ho8tOUe96}30Er%",
+                                "fields": {
+                                  "TEXT": "#1e2442"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "array_for_each",
+                        "id": "$=Is__hP|!.:7K6w9(%U",
+                        "inputs": {
+                          "LIST": {
+                            "block": {
+                              "type": "node_get_children",
+                              "id": "3hDdb@/|{{i#m_?h4STn",
+                              "fields": {
+                                "TYPE": "childMeshes"
+                              },
+                              "inputs": {
+                                "NODE": {
+                                  "shadow": {
+                                    "type": "mesh_selector",
+                                    "id": "Pkm^(HEDrxO?eBQ?(ddA",
+                                    "fields": {
+                                      "NAME": "__root__"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "DO_STATEMENT": {
+                            "block": {
+                              "type": "mesh_render_edges",
+                              "id": "t08|VP,OGHqPqR98q%yA",
+                              "inputs": {
+                                "MESH": {
+                                  "shadow": {
+                                    "type": "mesh_selector",
+                                    "id": "3akBHMTpyzLmx%?NfE(1",
+                                    "fields": {
+                                      "NAME": ""
+                                    }
+                                  },
+                                  "block": {
+                                    "type": "array_element_index",
+                                    "id": "QD~-Op7a8BEH*46[@{;t",
+                                    "fields": {
+                                      "ITEM": "element"
+                                    }
+                                  }
+                                },
+                                "EPSILON": {
+                                  "shadow": {
+                                    "type": "math_number",
+                                    "id": ":3lMC|aNDx[h2z^*;)w`",
+                                    "fields": {
+                                      "NUM": 0.99999
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "set_get_mesh_prop",
+                                  "id": "TiDT2tUq9Y.}mH{;(aN)",
+                                  "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                  "fields": {
+                                    "METHOD": "set",
+                                    "KEY": "edgesColor"
+                                  },
+                                  "inputs": {
+                                    "MESH": {
+                                      "shadow": {
+                                        "type": "mesh_selector",
+                                        "id": "2C{ObDh=K;-|HphML5vs",
+                                        "fields": {
+                                          "NAME": ""
+                                        }
+                                      },
+                                      "block": {
+                                        "type": "array_element_index",
+                                        "id": "2wEvu]MwHIhRWl:|(V9(",
+                                        "fields": {
+                                          "ITEM": "element"
+                                        }
+                                      }
+                                    },
+                                    "VALUE": {
+                                      "shadow": {
+                                        "type": "field_color4",
+                                        "id": "Kb5t@~]C5}8)%PW}~,8-",
+                                        "fields": {
+                                          "R": 0,
+                                          "G": 0,
+                                          "B": 255,
+                                          "A": 255
+                                        }
+                                      },
+                                      "block": {
+                                        "type": "material_color4_from_hex",
+                                        "id": "@dCl8t5swiKDV1c}9d9%",
+                                        "inputs": {
+                                          "HEX": {
+                                            "shadow": {
+                                              "type": "text",
+                                              "id": "hy+Dy~qPE97XI%uB@_m!",
+                                              "fields": {
+                                                "TEXT": "#92eeff"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "set_get_mesh_prop",
+                                      "id": "G*Y9@tRr_00wt4sKw27.",
+                                      "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                      "fields": {
+                                        "METHOD": "set",
+                                        "KEY": "edgesWidth"
+                                      },
+                                      "inputs": {
+                                        "MESH": {
+                                          "shadow": {
+                                            "type": "mesh_selector",
+                                            "id": "2C{ObDh=K;-|HphML5vs",
+                                            "fields": {
+                                              "NAME": ""
+                                            }
+                                          },
+                                          "block": {
+                                            "type": "array_element_index",
+                                            "id": "hnHGEw]H7-KMzqFGbXJ+",
+                                            "fields": {
+                                              "ITEM": "element"
+                                            }
+                                          }
+                                        },
+                                        "VALUE": {
+                                          "shadow": {
+                                            "type": "math_number",
+                                            "id": "84:my~Bzz+#uW/B3%t4R",
+                                            "fields": {
+                                              "NUM": 2.5
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "set_get_material_prop",
+                            "id": "ClcPbIs)Q~t^A8|yqDF$",
+                            "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                            "fields": {
+                              "METHOD": "set",
+                              "TYPE": "PBRMaterial",
+                              "KEY": "albedoColor"
+                            },
+                            "inputs": {
+                              "MATERIAL": {
+                                "block": {
+                                  "type": "variables_get",
+                                  "id": "ByL6qTSg25E8gc2Q2213",
+                                  "fields": {
+                                    "VAR": {
+                                      "id": "rMeG@8/^VScZ%J{r(lpL"
+                                    }
+                                  }
+                                }
+                              },
+                              "VALUE": {
+                                "shadow": {
+                                  "type": "field_color3",
+                                  "id": "Cii0x/pLvms,Fh`WYA7#",
+                                  "fields": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255
+                                  }
+                                },
+                                "block": {
+                                  "type": "material_color3_from_hex",
+                                  "id": "7Pm1}[/|5o8GO8i)|$#?",
+                                  "inputs": {
+                                    "HEX": {
+                                      "shadow": {
+                                        "type": "text",
+                                        "id": "VgWQiuI15PCt{uec|NvC",
+                                        "fields": {
+                                          "TEXT": "#001eff"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "type": "advanced_comment",
+                                "id": "-q(*fW6P+GLIe_/$8e9v",
+                                "fields": {
+                                  "INPUT": "调参面板"
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "create_tweak_pane",
+                                    "id": "BNn8w2+4Q|9sO^[9[T2d",
+                                    "inputs": {
+                                      "TITLE": {
+                                        "shadow": {
+                                          "type": "text",
+                                          "id": "Kk-H=xjf~zk:9mN|uHUi",
+                                          "fields": {
+                                            "TEXT": "参数"
+                                          }
+                                        }
+                                      },
+                                      "OPTIONS": {
+                                        "shadow": {
+                                          "type": "empty_object",
+                                          "id": "IqL1T1(Yymk.5V`^;iDt"
+                                        }
+                                      }
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "pane_add_color",
+                                        "id": "FAeZfIsL;%I0_VP5}T7{",
+                                        "inputs": {
+                                          "LABEL": {
+                                            "shadow": {
+                                              "type": "text",
+                                              "id": "=TMT--pbdm:o)Y*y`[c[",
+                                              "fields": {
+                                                "TEXT": " 背景"
+                                              }
+                                            }
+                                          },
+                                          "COLOR": {
+                                            "shadow": {
+                                              "type": "text",
+                                              "id": "ExyoK2c(V?qTV7RzzWM[",
+                                              "fields": {
+                                                "TEXT": "#110022"
+                                              }
+                                            }
+                                          },
+                                          "DO_CB": {
+                                            "block": {
+                                              "type": "set_scene_prop",
+                                              "id": "]leKi(YQHzecN}wb5uk`",
+                                              "fields": {
+                                                "KEY": "clearColor"
+                                              },
+                                              "inputs": {
+                                                "VALUE": {
+                                                  "shadow": {
+                                                    "type": "field_color4",
+                                                    "id": "C*hkGeDzxQZE0DQr|9DE",
+                                                    "fields": {
+                                                      "R": 100,
+                                                      "G": 100,
+                                                      "B": 200,
+                                                      "A": 1
+                                                    }
+                                                  },
+                                                  "block": {
+                                                    "type": "material_color4_from_hex",
+                                                    "id": "6:Lr1p;#D@+I)]Pup9xT",
+                                                    "inputs": {
+                                                      "HEX": {
+                                                        "shadow": {
+                                                          "type": "text",
+                                                          "id": "z+,Fx=Uu@4^kXnA|_=tU",
+                                                          "fields": {
+                                                            "TEXT": "#0000ffff"
+                                                          }
+                                                        },
+                                                        "block": {
+                                                          "type": "pane_get_value",
+                                                          "id": "Tu)gD%P+PoqR}[tx=3d*"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "pane_add_button",
+                                            "id": "X+Zi?b%vn=7Xcp6OAX?A",
+                                            "inputs": {
+                                              "TITLE": {
+                                                "shadow": {
+                                                  "type": "text",
+                                                  "id": "*Yg%_|jS`4|_O_I@[@0S",
+                                                  "fields": {
+                                                    "TEXT": "渲染线框"
+                                                  }
+                                                }
+                                              },
+                                              "DO_CB": {
+                                                "block": {
+                                                  "type": "array_for_each",
+                                                  "id": "Q1ZEt$+u:Q^PGc:J93]p",
+                                                  "inputs": {
+                                                    "LIST": {
+                                                      "block": {
+                                                        "type": "node_get_children",
+                                                        "id": "`}[q-Zz;L}2~(J|/~kKf",
+                                                        "fields": {
+                                                          "TYPE": "childMeshes"
+                                                        },
+                                                        "inputs": {
+                                                          "NODE": {
+                                                            "shadow": {
+                                                              "type": "mesh_selector",
+                                                              "id": "$bdxM_yk#?//ZME(y?B+",
+                                                              "fields": {
+                                                                "NAME": "__root__"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "DO_STATEMENT": {
+                                                      "block": {
+                                                        "type": "mesh_render_edges",
+                                                        "id": "Y:Xlx,xBth,gx%b/P~cA",
+                                                        "inputs": {
+                                                          "MESH": {
+                                                            "shadow": {
+                                                              "type": "mesh_selector",
+                                                              "id": "3akBHMTpyzLmx%?NfE(1",
+                                                              "fields": {
+                                                                "NAME": ""
+                                                              }
+                                                            },
+                                                            "block": {
+                                                              "type": "array_element_index",
+                                                              "id": "c4umXwn1((kI48K,TSR,",
+                                                              "fields": {
+                                                                "ITEM": "element"
+                                                              }
+                                                            }
+                                                          },
+                                                          "EPSILON": {
+                                                            "shadow": {
+                                                              "type": "math_number",
+                                                              "id": "Kw)7~V6:NujUl9.}/d,W",
+                                                              "fields": {
+                                                                "NUM": 0.99999
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "pane_add_color",
+                                                "id": "lgX0=D?-T!?%CA|]Ed7%",
+                                                "inputs": {
+                                                  "LABEL": {
+                                                    "shadow": {
+                                                      "type": "text",
+                                                      "id": "yFCQUKLQwChRtjhH]$FI",
+                                                      "fields": {
+                                                        "TEXT": "线框颜色"
+                                                      }
+                                                    }
+                                                  },
+                                                  "COLOR": {
+                                                    "shadow": {
+                                                      "type": "text",
+                                                      "id": "Na],J`@bXFPppxK(^6$!",
+                                                      "fields": {
+                                                        "TEXT": "#0000ff"
+                                                      }
+                                                    }
+                                                  },
+                                                  "DO_CB": {
+                                                    "block": {
+                                                      "type": "array_for_each",
+                                                      "id": "_8JXB24p[ttPErHdLFr~",
+                                                      "inputs": {
+                                                        "LIST": {
+                                                          "block": {
+                                                            "type": "node_get_children",
+                                                            "id": "%dGHK8x=FxuH%P~E3yAr",
+                                                            "fields": {
+                                                              "TYPE": "childMeshes"
+                                                            },
+                                                            "inputs": {
+                                                              "NODE": {
+                                                                "shadow": {
+                                                                  "type": "mesh_selector",
+                                                                  "id": "]kV{7%Yp7hpt2W%#!Lw}",
+                                                                  "fields": {
+                                                                    "NAME": "__root__"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "DO_STATEMENT": {
+                                                          "block": {
+                                                            "type": "set_get_mesh_prop",
+                                                            "id": "1rRM+t(o((5Z)AS=x},3",
+                                                            "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                            "fields": {
+                                                              "METHOD": "set",
+                                                              "KEY": "edgesColor"
+                                                            },
+                                                            "inputs": {
+                                                              "MESH": {
+                                                                "shadow": {
+                                                                  "type": "mesh_selector",
+                                                                  "id": "2C{ObDh=K;-|HphML5vs",
+                                                                  "fields": {
+                                                                    "NAME": ""
+                                                                  }
+                                                                },
+                                                                "block": {
+                                                                  "type": "array_element_index",
+                                                                  "id": "(~@TO%O]^aq]VKh~ABYo",
+                                                                  "fields": {
+                                                                    "ITEM": "element"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "VALUE": {
+                                                                "shadow": {
+                                                                  "type": "field_color4",
+                                                                  "id": "Kb5t@~]C5}8)%PW}~,8-",
+                                                                  "fields": {
+                                                                    "R": 0,
+                                                                    "G": 0,
+                                                                    "B": 255,
+                                                                    "A": 255
+                                                                  }
+                                                                },
+                                                                "block": {
+                                                                  "type": "material_color4_from_hex",
+                                                                  "id": "-OOJ+W4)k6%dxcKgY6oY",
+                                                                  "inputs": {
+                                                                    "HEX": {
+                                                                      "shadow": {
+                                                                        "type": "text",
+                                                                        "id": "wwKe*wy3P^wm2c/99)r6",
+                                                                        "fields": {
+                                                                          "TEXT": "#0000ffff"
+                                                                        }
+                                                                      },
+                                                                      "block": {
+                                                                        "type": "pane_get_value",
+                                                                        "id": "5AXF!+rD%N|/K(@0Lufr"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "pane_add_slider",
+                                                    "id": "_nKmP-0_)-DFbT}2IlAa",
+                                                    "inputs": {
+                                                      "LABEL": {
+                                                        "shadow": {
+                                                          "type": "text",
+                                                          "id": "L+cCJJVm[1e-*be3djhG",
+                                                          "fields": {
+                                                            "TEXT": "线宽"
+                                                          }
+                                                        }
+                                                      },
+                                                      "OPTIONS": {
+                                                        "shadow": {
+                                                          "type": "empty_object",
+                                                          "id": "?3ZLsVnwYG7Cz@Er=MAU"
+                                                        },
+                                                        "block": {
+                                                          "type": "object_create",
+                                                          "id": "CzU0]-$X(%XW5tb}jIe8",
+                                                          "fields": {
+                                                            "EMPTY": false
+                                                          },
+                                                          "inputs": {
+                                                            "ITEM": {
+                                                              "block": {
+                                                                "type": "pane_slider_options",
+                                                                "id": "t`c1aiC`a-D]YI^4@G$d",
+                                                                "fields": {
+                                                                  "KEY": "min"
+                                                                },
+                                                                "inputs": {
+                                                                  "VALUE": {
+                                                                    "shadow": {
+                                                                      "type": "math_number",
+                                                                      "id": "~;28CoBi)(=~Ws*D6f:F",
+                                                                      "fields": {
+                                                                        "NUM": 0
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "next": {
+                                                                  "block": {
+                                                                    "type": "pane_slider_options",
+                                                                    "id": "eRY[76|,f%5c)xvAX`UP",
+                                                                    "fields": {
+                                                                      "KEY": "max"
+                                                                    },
+                                                                    "inputs": {
+                                                                      "VALUE": {
+                                                                        "shadow": {
+                                                                          "type": "math_number",
+                                                                          "id": "Q@~;DbRIh-rhp:iK(V5y",
+                                                                          "fields": {
+                                                                            "NUM": 5
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "next": {
+                                                                      "block": {
+                                                                        "type": "pane_slider_options",
+                                                                        "id": "^3S`tSWy_o5@9;VVZC/-",
+                                                                        "fields": {
+                                                                          "KEY": "step"
+                                                                        },
+                                                                        "inputs": {
+                                                                          "VALUE": {
+                                                                            "shadow": {
+                                                                              "type": "math_number",
+                                                                              "id": "2v8L)PaI;%`xtjnOv?*6",
+                                                                              "fields": {
+                                                                                "NUM": 0.01
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "next": {
+                                                                          "block": {
+                                                                            "type": "pane_slider_options",
+                                                                            "id": "ND/TQtFpLD[sEHHazy%p",
+                                                                            "fields": {
+                                                                              "KEY": "value"
+                                                                            },
+                                                                            "inputs": {
+                                                                              "VALUE": {
+                                                                                "shadow": {
+                                                                                  "type": "math_number",
+                                                                                  "id": "~PAu;^C:Ek6HTx4fq$fe",
+                                                                                  "fields": {
+                                                                                    "NUM": 2.5
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "DO_CB": {
+                                                        "block": {
+                                                          "type": "array_for_each",
+                                                          "id": "z|S].3;K!822rJ.|j#xf",
+                                                          "inputs": {
+                                                            "LIST": {
+                                                              "block": {
+                                                                "type": "node_get_children",
+                                                                "id": "6v(.b^`J5pu_)bsyPQM[",
+                                                                "fields": {
+                                                                  "TYPE": "childMeshes"
+                                                                },
+                                                                "inputs": {
+                                                                  "NODE": {
+                                                                    "shadow": {
+                                                                      "type": "mesh_selector",
+                                                                      "id": "H;+)g#`%oj+ji7Kp^=IK",
+                                                                      "fields": {
+                                                                        "NAME": "__root__"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "DO_STATEMENT": {
+                                                              "block": {
+                                                                "type": "set_get_mesh_prop",
+                                                                "id": "{+b#:i;VVGzYL(533[F(",
+                                                                "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                                "fields": {
+                                                                  "METHOD": "set",
+                                                                  "KEY": "edgesWidth"
+                                                                },
+                                                                "inputs": {
+                                                                  "MESH": {
+                                                                    "shadow": {
+                                                                      "type": "mesh_selector",
+                                                                      "id": "2C{ObDh=K;-|HphML5vs",
+                                                                      "fields": {
+                                                                        "NAME": ""
+                                                                      }
+                                                                    },
+                                                                    "block": {
+                                                                      "type": "array_element_index",
+                                                                      "id": "9+z)wufmcjngD!]90pDP",
+                                                                      "fields": {
+                                                                        "ITEM": "element"
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "VALUE": {
+                                                                    "shadow": {
+                                                                      "type": "math_number",
+                                                                      "id": "6h|Gc`p$=SHEp;{k.pA{",
+                                                                      "fields": {
+                                                                        "NUM": 1
+                                                                      }
+                                                                    },
+                                                                    "block": {
+                                                                      "type": "pane_get_value",
+                                                                      "id": "o]/#+j6osB_ts8#KVj|Y"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "next": {
+                                                      "block": {
+                                                        "type": "pane_add_color",
+                                                        "id": "*P4],b,QLQR`}]@[z2IQ",
+                                                        "inputs": {
+                                                          "LABEL": {
+                                                            "shadow": {
+                                                              "type": "text",
+                                                              "id": "6$:3oR4431m!wp8Ti4+:",
+                                                              "fields": {
+                                                                "TEXT": "材质颜色"
+                                                              }
+                                                            }
+                                                          },
+                                                          "COLOR": {
+                                                            "shadow": {
+                                                              "type": "text",
+                                                              "id": "QaOf#O;)6nOX-Wn01A[I",
+                                                              "fields": {
+                                                                "TEXT": "#001eff"
+                                                              }
+                                                            }
+                                                          },
+                                                          "DO_CB": {
+                                                            "block": {
+                                                              "type": "set_get_material_prop",
+                                                              "id": ",mc3:1DJX?3aDyp9CL[o",
+                                                              "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                              "fields": {
+                                                                "METHOD": "set",
+                                                                "TYPE": "PBRMaterial",
+                                                                "KEY": "albedoColor"
+                                                              },
+                                                              "inputs": {
+                                                                "MATERIAL": {
+                                                                  "block": {
+                                                                    "type": "variables_get",
+                                                                    "id": "#Fd+e:M{fm1lb(`(W[)R",
+                                                                    "fields": {
+                                                                      "VAR": {
+                                                                        "id": "rMeG@8/^VScZ%J{r(lpL"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE": {
+                                                                  "shadow": {
+                                                                    "type": "field_color3",
+                                                                    "id": "Cii0x/pLvms,Fh`WYA7#",
+                                                                    "fields": {
+                                                                      "R": 255,
+                                                                      "G": 255,
+                                                                      "B": 255
+                                                                    }
+                                                                  },
+                                                                  "block": {
+                                                                    "type": "material_color3_from_hex",
+                                                                    "id": "a=z=h_Vp.v%o9;fWcaOe",
+                                                                    "inputs": {
+                                                                      "HEX": {
+                                                                        "shadow": {
+                                                                          "type": "text",
+                                                                          "id": "1uYlX*V*VwS/vI1IjqwC",
+                                                                          "fields": {
+                                                                            "TEXT": "#ff0000"
+                                                                          }
+                                                                        },
+                                                                        "block": {
+                                                                          "type": "pane_get_value",
+                                                                          "id": "Z`Eq;3E;R)qY}q~|y1^E"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "next": {
+                                                          "block": {
+                                                            "type": "pane_add_checkbox",
+                                                            "id": "0R2TgJ[k_#i27$^1.Rlo",
+                                                            "fields": {
+                                                              "CHECKED": false
+                                                            },
+                                                            "inputs": {
+                                                              "LABEL": {
+                                                                "shadow": {
+                                                                  "type": "text",
+                                                                  "id": "dth_i^:Y4)$E%]pug$r7",
+                                                                  "fields": {
+                                                                    "TEXT": "材质透明"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "DO_CB": {
+                                                                "block": {
+                                                                  "type": "controls_if",
+                                                                  "id": "JB;Fh_.gWy4LEt5CY5w(",
+                                                                  "extraState": {
+                                                                    "hasElse": true
+                                                                  },
+                                                                  "inputs": {
+                                                                    "IF0": {
+                                                                      "block": {
+                                                                        "type": "pane_get_value",
+                                                                        "id": "@AUP#z?a=0l=L[c~+6:u"
+                                                                      }
+                                                                    },
+                                                                    "DO0": {
+                                                                      "block": {
+                                                                        "type": "set_get_material_prop",
+                                                                        "id": "24(]k{ocohGrp13l2[dX",
+                                                                        "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                                        "fields": {
+                                                                          "METHOD": "set",
+                                                                          "TYPE": "PBRMaterial",
+                                                                          "KEY": "transparencyMode"
+                                                                        },
+                                                                        "inputs": {
+                                                                          "MATERIAL": {
+                                                                            "block": {
+                                                                              "type": "variables_get",
+                                                                              "id": "F@o3RN^x?5#:fYA8bf|q",
+                                                                              "fields": {
+                                                                                "VAR": {
+                                                                                  "id": "rMeG@8/^VScZ%J{r(lpL"
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "VALUE": {
+                                                                            "shadow": {
+                                                                              "type": "math_number",
+                                                                              "id": "Ja$w(]^~k}D%ibCk2.$/",
+                                                                              "fields": {
+                                                                                "NUM": 2
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "ELSE": {
+                                                                      "block": {
+                                                                        "type": "set_get_material_prop",
+                                                                        "id": "n#Zs=d6wJv`?[p.VS`=Z",
+                                                                        "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                                        "fields": {
+                                                                          "METHOD": "set",
+                                                                          "TYPE": "PBRMaterial",
+                                                                          "KEY": "transparencyMode"
+                                                                        },
+                                                                        "inputs": {
+                                                                          "MATERIAL": {
+                                                                            "block": {
+                                                                              "type": "variables_get",
+                                                                              "id": "pkWN}70P,^2.Yrw1w$k1",
+                                                                              "fields": {
+                                                                                "VAR": {
+                                                                                  "id": "rMeG@8/^VScZ%J{r(lpL"
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "VALUE": {
+                                                                            "shadow": {
+                                                                              "type": "math_number",
+                                                                              "id": "riW|l}+9NK?gcn0Z;oZc",
+                                                                              "fields": {
+                                                                                "NUM": 0
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "next": {
+                                                              "block": {
+                                                                "type": "pane_add_slider",
+                                                                "id": "eUcf4nK3_:VHD:igu%6x",
+                                                                "inputs": {
+                                                                  "LABEL": {
+                                                                    "shadow": {
+                                                                      "type": "text",
+                                                                      "id": "6VA4Li119wj6AH7vprC.",
+                                                                      "fields": {
+                                                                        "TEXT": "材质透明度"
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "OPTIONS": {
+                                                                    "shadow": {
+                                                                      "type": "empty_object",
+                                                                      "id": "k/+oP`%N#Eyn|xl:tjw6"
+                                                                    },
+                                                                    "block": {
+                                                                      "type": "object_create",
+                                                                      "id": ";j%N.QDbFlSK$Bn!*p:q",
+                                                                      "fields": {
+                                                                        "EMPTY": false
+                                                                      },
+                                                                      "inputs": {
+                                                                        "ITEM": {
+                                                                          "block": {
+                                                                            "type": "pane_slider_options",
+                                                                            "id": "u=B$t6NAn{|saTEX)+ql",
+                                                                            "fields": {
+                                                                              "KEY": "min"
+                                                                            },
+                                                                            "inputs": {
+                                                                              "VALUE": {
+                                                                                "shadow": {
+                                                                                  "type": "math_number",
+                                                                                  "id": "hvI),b_UW7JpEc]09igZ",
+                                                                                  "fields": {
+                                                                                    "NUM": 0
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            },
+                                                                            "next": {
+                                                                              "block": {
+                                                                                "type": "pane_slider_options",
+                                                                                "id": "KHhORK0JU@Ig4q%vhWZD",
+                                                                                "fields": {
+                                                                                  "KEY": "max"
+                                                                                },
+                                                                                "inputs": {
+                                                                                  "VALUE": {
+                                                                                    "shadow": {
+                                                                                      "type": "math_number",
+                                                                                      "id": "Sk?$*7OQ780.BG,n!{Hk",
+                                                                                      "fields": {
+                                                                                        "NUM": 1
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                },
+                                                                                "next": {
+                                                                                  "block": {
+                                                                                    "type": "pane_slider_options",
+                                                                                    "id": "k6O(%a~#%5l3nyji-x1#",
+                                                                                    "fields": {
+                                                                                      "KEY": "step"
+                                                                                    },
+                                                                                    "inputs": {
+                                                                                      "VALUE": {
+                                                                                        "shadow": {
+                                                                                          "type": "math_number",
+                                                                                          "id": "%{0,yg!1C1C8HuJK,50F",
+                                                                                          "fields": {
+                                                                                            "NUM": 0.01
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    },
+                                                                                    "next": {
+                                                                                      "block": {
+                                                                                        "type": "pane_slider_options",
+                                                                                        "id": "}_+:}^[%^x?w#X%O!m(Q",
+                                                                                        "fields": {
+                                                                                          "KEY": "value"
+                                                                                        },
+                                                                                        "inputs": {
+                                                                                          "VALUE": {
+                                                                                            "shadow": {
+                                                                                              "type": "math_number",
+                                                                                              "id": "0|%L[fb0OquzU)u{u#zg",
+                                                                                              "fields": {
+                                                                                                "NUM": 1
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "DO_CB": {
+                                                                    "block": {
+                                                                      "type": "set_get_material_prop",
+                                                                      "id": ";O#-J8*~/V]bdTtCK[6[",
+                                                                      "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                                                                      "fields": {
+                                                                        "METHOD": "set",
+                                                                        "TYPE": "PBRMaterial",
+                                                                        "KEY": "alpha"
+                                                                      },
+                                                                      "inputs": {
+                                                                        "MATERIAL": {
+                                                                          "block": {
+                                                                            "type": "variables_get",
+                                                                            "id": "*zt2yH)FVLkm)FGRqU@8",
+                                                                            "fields": {
+                                                                              "VAR": {
+                                                                                "id": "rMeG@8/^VScZ%J{r(lpL"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "VALUE": {
+                                                                          "shadow": {
+                                                                            "type": "math_number",
+                                                                            "id": "NiBkYRTNIY8^~_5Z];U}",
+                                                                            "fields": {
+                                                                              "NUM": 0.2
+                                                                            }
+                                                                          },
+                                                                          "block": {
+                                                                            "type": "pane_get_value",
+                                                                            "id": "j+!fpg#%U}PxZR|Dhe.h"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "variables": [
+        {
+          "name": "mat",
+          "id": "rMeG@8/^VScZ%J{r(lpL"
+        }
+      ]
+    }
+  },
+  "setting": {
+    "data": {
+      "lang": "en",
+      "gutterPosition": "50",
+      "openInspector": false
+    }
+  }
+}

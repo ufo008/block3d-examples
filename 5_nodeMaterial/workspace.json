@@ -1,0 +1,362 @@
+{
+  "main": {
+    "type": "block",
+    "data": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "time_after",
+            "id": "]k7^#6{[C8!](W%I6ZQj",
+            "x": 70,
+            "y": -30,
+            "inputs": {
+              "VALUE": {
+                "shadow": {
+                  "type": "math_number",
+                  "id": "|N@6OeMGE~58^8Y?}K3[",
+                  "fields": {
+                    "NUM": 0
+                  }
+                }
+              },
+              "DO_CB": {
+                "block": {
+                  "type": "scene_update_default_environment",
+                  "id": "DJ/)#Sd96F?GPoq%6CU]",
+                  "inputs": {
+                    "OPTIONS": {
+                      "shadow": {
+                        "type": "empty_object",
+                        "id": "Znvuh?O8@1`5!:@_2,5f"
+                      },
+                      "block": {
+                        "type": "object_create",
+                        "id": "!sKAKj;S(!m,^7-hDHfO",
+                        "fields": {
+                          "EMPTY": false
+                        },
+                        "inputs": {
+                          "ITEM": {
+                            "block": {
+                              "type": "scene_create_default_environment_option",
+                              "id": "N)XB+exqtDsSKZ4:IQzc",
+                              "fields": {
+                                "KEY": "createGround"
+                              },
+                              "inputs": {
+                                "VALUE": {
+                                  "shadow": {
+                                    "type": "logic_boolean",
+                                    "id": "(Ex-|A__,NH,]:7P=K,]",
+                                    "fields": {
+                                      "BOOL": "FALSE"
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "scene_create_default_environment_option",
+                                  "id": "Qj#t(u^CqF1HStXV;@|*",
+                                  "fields": {
+                                    "KEY": "createSkybox"
+                                  },
+                                  "inputs": {
+                                    "VALUE": {
+                                      "shadow": {
+                                        "type": "logic_boolean",
+                                        "id": "i$YAGo^$^#9U-H8:g]C=",
+                                        "fields": {
+                                          "BOOL": "FALSE"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "scene_assets_manager",
+                "id": "$|dwVIJ~X;4B6XA+EBy-",
+                "fields": {
+                  "USE_DEFAULT_PRELOADER": false
+                },
+                "inputs": {
+                  "LOAD_ASSETS": {
+                    "block": {
+                      "type": "variables_set",
+                      "id": "U#=mTu#zT2jEI0_vNkv#",
+                      "fields": {
+                        "VAR": {
+                          "id": "~1lktf,mt2R*]n5Ge2u+"
+                        }
+                      },
+                      "inputs": {
+                        "VALUE": {
+                          "block": {
+                            "type": "scene_load_asset",
+                            "id": "^BDA3;/iz?Z}DDV5r}n`",
+                            "fields": {
+                              "TYPE": "addBinaryFileTask"
+                            },
+                            "inputs": {
+                              "ASSET_NAME": {
+                                "shadow": {
+                                  "type": "text",
+                                  "id": "6MXNXDAD}yB8)xlL?tN!",
+                                  "fields": {
+                                    "TEXT": "addBinaryFileTask"
+                                  }
+                                }
+                              },
+                              "URL": {
+                                "shadow": {
+                                  "type": "text",
+                                  "id": ")#ha2Q-MA~wCLuR#;t]c",
+                                  "fields": {
+                                    "TEXT": "assets/json/nodeMaterial.json"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ON_FINISH": {
+                    "block": {
+                      "type": "variables_set",
+                      "id": "Mw5qoeY_Rw4O$hfwswo_",
+                      "fields": {
+                        "VAR": {
+                          "id": "=Dpxh;oyq(5UB5_MI!4E"
+                        }
+                      },
+                      "inputs": {
+                        "VALUE": {
+                          "block": {
+                            "type": "create_material",
+                            "id": "`dLaRxM(HPjd{.G.^]V:",
+                            "fields": {
+                              "TYPE": "NodeMaterial"
+                            },
+                            "inputs": {
+                              "JSON": {
+                                "block": {
+                                  "type": "scene_get_loaded_from_asset",
+                                  "id": "VLXj^~Ds67O{|PuJjb{q",
+                                  "fields": {
+                                    "TYPE": "json"
+                                  },
+                                  "inputs": {
+                                    "ASSET": {
+                                      "block": {
+                                        "type": "variables_get",
+                                        "id": "9mqV*gH%z6baVxa!2SAW",
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "~1lktf,mt2R*]n5Ge2u+"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "variables_set",
+                          "id": ";W$pgsp6xG@[*#/+8{td",
+                          "fields": {
+                            "VAR": {
+                              "id": "ZVK#R)P/UD,}`mBzBn|E"
+                            }
+                          },
+                          "inputs": {
+                            "VALUE": {
+                              "block": {
+                                "type": "mesh_create_set_shapes",
+                                "id": "(Ax@Nv+ZVVbjdzC@k7?4",
+                                "fields": {
+                                  "TYPE": "Ground"
+                                },
+                                "inputs": {
+                                  "NAME": {
+                                    "shadow": {
+                                      "type": "text",
+                                      "id": "fNAyp7UPmoRPMJ@J1yLL",
+                                      "fields": {
+                                        "TEXT": "ground"
+                                      }
+                                    }
+                                  },
+                                  "OPTIONS": {
+                                    "shadow": {
+                                      "type": "empty_object",
+                                      "id": ";l.)`S*E]Ln#)oT2p9e;"
+                                    },
+                                    "block": {
+                                      "type": "object_create",
+                                      "id": "YZ}1*8[XECo+nfsu63tG",
+                                      "fields": {
+                                        "EMPTY": false
+                                      },
+                                      "inputs": {
+                                        "ITEM": {
+                                          "block": {
+                                            "type": "mesh_create_ground_option",
+                                            "id": "s72/L[/toKYR#-xK(|Oh",
+                                            "fields": {
+                                              "KEY": "subdivisions"
+                                            },
+                                            "inputs": {
+                                              "VALUE": {
+                                                "shadow": {
+                                                  "type": "math_number",
+                                                  "id": "R%C(FmgPuTRBA(IPOPyB",
+                                                  "fields": {
+                                                    "NUM": 100
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "mesh_create_ground_option",
+                                                "id": "pIElp2`kuJ~.MlPDQ;2T",
+                                                "fields": {
+                                                  "KEY": "width"
+                                                },
+                                                "inputs": {
+                                                  "VALUE": {
+                                                    "shadow": {
+                                                      "type": "math_number",
+                                                      "id": "_~{S]w)rZJez=Sf+K[w9",
+                                                      "fields": {
+                                                        "NUM": 10
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "mesh_create_ground_option",
+                                                    "id": "4?~!SHg~f32*szXzLb7!",
+                                                    "fields": {
+                                                      "KEY": "height"
+                                                    },
+                                                    "inputs": {
+                                                      "VALUE": {
+                                                        "shadow": {
+                                                          "type": "math_number",
+                                                          "id": "(!yJ^?fbLQjmUA_K{Cc?",
+                                                          "fields": {
+                                                            "NUM": 10
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "set_get_mesh_prop",
+                              "id": "Hq2TO5onrqZ.GJ{KOZ54",
+                              "extraState": "<mutation statement=\"true\" valueInput=\"true\"></mutation>",
+                              "fields": {
+                                "METHOD": "set",
+                                "KEY": "material"
+                              },
+                              "inputs": {
+                                "MESH": {
+                                  "shadow": {
+                                    "type": "mesh_selector",
+                                    "id": "[ApU[a^SlmJG6[LQVd!g",
+                                    "fields": {
+                                      "NAME": ""
+                                    }
+                                  },
+                                  "block": {
+                                    "type": "variables_get",
+                                    "id": "A0g;eHEEW.+}#(4I4ktb",
+                                    "fields": {
+                                      "VAR": {
+                                        "id": "ZVK#R)P/UD,}`mBzBn|E"
+                                      }
+                                    }
+                                  }
+                                },
+                                "VALUE": {
+                                  "block": {
+                                    "type": "variables_get",
+                                    "id": "O:ZidOn~WZK#+^mI~B8V",
+                                    "fields": {
+                                      "VAR": {
+                                        "id": "=Dpxh;oyq(5UB5_MI!4E"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "variables": [
+        {
+          "name": "loadNodeMaterial",
+          "id": "~1lktf,mt2R*]n5Ge2u+"
+        },
+        {
+          "name": "nodeMat",
+          "id": "=Dpxh;oyq(5UB5_MI!4E"
+        },
+        {
+          "name": "ground",
+          "id": "ZVK#R)P/UD,}`mBzBn|E"
+        }
+      ]
+    }
+  },
+  "setting": {
+    "data": {
+      "lang": "en",
+      "gutterPosition": "58",
+      "openInspector": true
+    }
+  }
+}

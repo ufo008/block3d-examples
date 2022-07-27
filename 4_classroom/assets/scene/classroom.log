@@ -1,0 +1,381 @@
+Exporter version: 2.93.4, Blender version: 3.0.0
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  D:\projects\classroom\assets\scene\
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  Object_4
+		processing begun of material:  BoardMat
+			processing texture BoardMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  704
+		num normals        :  704
+		num tangents       :  2816
+		num uvs            :  1408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  342
+	processing begun of mesh:  Object_11
+		processing begun of material:  ClockMat
+			processing texture ClockMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  112
+		num normals        :  112
+		num tangents       :  448
+		num uvs            :  224
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  111
+	processing begun of mesh:  Object_16
+		processing begun of material:  GlassMat
+			processing texture GlassMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  12
+		num normals        :  12
+		num tangents       :  48
+		num uvs            :  24
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  6
+	processing begun of mesh:  Object_18
+		processing begun of material:  Lights
+			processing texture Lights_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  2414
+		num normals        :  2414
+		num tangents       :  9656
+		num uvs            :  4828
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1344
+	processing begun of mesh:  Object_19
+		processing begun of material:  GlobeMat
+			processing texture GlobeMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  498
+		num normals        :  498
+		num tangents       :  1992
+		num uvs            :  996
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  670
+	processing begun of mesh:  Object_20
+		processing begun of material:  Outline
+		num positions      :  0
+		num normals        :  0
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  0
+	WARNING: mesh, Object_20, has 0 vertices; ignored
+	processing begun of mesh:  Object_21
+		processing begun of material:  MapMat
+			processing texture MapMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  104
+		num normals        :  104
+		num tangents       :  416
+		num uvs            :  208
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  56
+	processing begun of mesh:  Object_22
+		processing begun of material:  None
+		Custom split normals with tangents being used
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  16
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  Object_25
+		processing begun of material:  Plant3Mat
+			processing texture Plant3Mat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  647
+		num normals        :  647
+		num tangents       :  2588
+		num uvs            :  1294
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  562
+	processing begun of mesh:  Object_28
+		processing begun of material:  WinodwsMat
+			processing texture WinodwsMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  1993
+		num normals        :  1993
+		num tangents       :  7972
+		num uvs            :  3986
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1163
+	processing begun of mesh:  Object_29
+		processing begun of material:  WallPartsMat
+			processing texture WallPartsMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  4356
+		num normals        :  4356
+		num tangents       :  17424
+		num uvs            :  8712
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2178
+	processing begun of mesh:  Object_31
+		processing begun of material:  TrashBinMat
+			processing texture TrashBinMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  165
+		num normals        :  165
+		num tangents       :  660
+		num uvs            :  330
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  148
+	processing begun of mesh:  Object_32
+		processing begun of material:  chalkboardMat
+			processing texture chalkboardMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  303
+		num normals        :  303
+		num tangents       :  1212
+		num uvs            :  606
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  174
+	processing begun of mesh:  Object_34
+		processing begun of material:  CurtainMat
+			processing texture CurtainMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  1090
+		num normals        :  1090
+		num tangents       :  4360
+		num uvs            :  2180
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  760
+	processing begun of mesh:  Object_52
+		processing begun of material:  Plant1Mat
+			processing texture Plant1Mat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  1148
+		num normals        :  1148
+		num tangents       :  4592
+		num uvs            :  2296
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1164
+	processing begun of mesh:  Object_53
+		processing begun of material:  Plant2Mat
+			processing texture Plant2Mat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  4704
+		num normals        :  4704
+		num tangents       :  18816
+		num uvs            :  9408
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  5570
+	processing begun of mesh:  Object_25.001
+		mesh is an instance of :  Object_25.  Processing halted.
+	processing begun of node:  collisions
+	processing begun of mesh:  bookshelf
+		processing begun of material:  BookShelfMat
+			processing texture BookShelfMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  844
+		num normals        :  844
+		num tangents       :  3376
+		num uvs            :  1688
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  586
+	processing begun of mesh:  bookcase
+		processing begun of material:  LockerMat
+			processing texture LockerMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  606
+		num normals        :  606
+		num tangents       :  2424
+		num uvs            :  1212
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  512
+	processing begun of mesh:  desk
+		processing begun of material:  TeachersDeskMat
+			processing texture TeachersDeskMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  1903
+		num normals        :  1903
+		num tangents       :  7612
+		num uvs            :  3806
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  820
+	processing begun of mesh:  desk_c
+		processing begun of material:  Desk2Mat
+			processing texture Desk2Mat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  2676
+		num normals        :  2676
+		num tangents       :  10704
+		num uvs            :  5352
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1644
+	processing begun of mesh:  desk_a
+		processing begun of material:  Desk3Mat
+			processing texture Desk3Mat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  2748
+		num normals        :  2748
+		num tangents       :  10992
+		num uvs            :  5496
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1716
+	processing begun of mesh:  desk_d
+		processing begun of material:  Desk4Mat
+			processing texture Desk4Mat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  3671
+		num normals        :  3671
+		num tangents       :  14684
+		num uvs            :  7342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1824
+	processing begun of mesh:  desk_b
+		processing begun of material:  Desk3Mat
+		registered as also a user of material:  Desk3Mat
+		Custom split normals with tangents being used
+		num positions      :  2745
+		num normals        :  2745
+		num tangents       :  10980
+		num uvs            :  5490
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1716
+	processing begun of mesh:  ground
+		processing begun of material:  FloorMat
+			processing texture FloorMat_normal
+				texture type:  bumpTexture, mapped using: "UVMap"
+			processing texture FloorMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  16
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  wall
+		processing begun of material:  WallsMat
+			processing texture WallsMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  188
+		num normals        :  188
+		num tangents       :  752
+		num uvs            :  376
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  154
+	processing begun of mesh:  door
+		processing begun of material:  DoorMat.002
+			processing texture DoorMat_002_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  713
+		num normals        :  713
+		num tangents       :  2852
+		num uvs            :  1426
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  382
+	processing begun of mesh:  chair
+		processing begun of material:  TeachersChairMat
+			processing texture TeachersChairMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  2709
+		num normals        :  2709
+		num tangents       :  10836
+		num uvs            :  5418
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1316
+	processing begun of mesh:  top
+		processing begun of material:  CellingMat
+			processing texture CellingMat_baseColor
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		Custom split normals with tangents being used
+		num positions      :  101
+		num normals        :  101
+		num tangents       :  404
+		num uvs            :  202
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  60
+========= Writing of JSON file started =========
+	writing mesh:  Object_4
+	writing mesh:  Object_11
+	writing mesh:  Object_16
+	writing mesh:  Object_18
+	writing mesh:  Object_19
+	writing mesh:  Object_21
+	writing mesh:  Object_22
+	writing mesh:  Object_25
+	writing mesh:  Object_28
+	writing mesh:  Object_29
+	writing mesh:  Object_31
+	writing mesh:  Object_32
+	writing mesh:  Object_34
+	writing mesh:  Object_52
+	writing mesh:  Object_53
+	writing mesh:  bookshelf
+	writing mesh:  bookcase
+	writing mesh:  desk
+	writing mesh:  desk_c
+	writing mesh:  desk_a
+	writing mesh:  desk_d
+	writing mesh:  desk_b
+	writing mesh:  ground
+	writing mesh:  wall
+	writing mesh:  door
+	writing mesh:  chair
+	writing mesh:  top
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 7.3482 secs

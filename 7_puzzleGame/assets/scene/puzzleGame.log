@@ -1,0 +1,243 @@
+Exporter version: 2.93.4, Blender version: 3.0.0
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  D:\projects\puzzleGame\assets\scene\
+			WARNING: unsupported node type(ShaderNodeLightPath) will trigger baking
+			WARNING: unsupported node type(ShaderNodeTexGradient) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  blank
+		WARNING: No materials have been assigned: 
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of node:  blocks
+	processing begun of mesh:  Plane_000
+		processing begun of material:  block
+		processing begun of material:  white
+			processing texture image
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  puzzleGame.Multimaterial#0
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_001
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#1
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_002
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#2
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_003
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#3
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_004
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#4
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_005
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#5
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_006
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#6
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_007
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#7
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_008
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#8
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_009
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#9
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_010
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#10
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_011
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#11
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_012
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#12
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_013
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#13
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+	processing begun of mesh:  Plane_014
+		processing begun of material:  block
+		processing begun of material:  white
+		registered as also a user of material:  block
+		registered as also a user of material:  white
+		processing begun of multimaterial:  puzzleGame.Multimaterial#14
+		num positions      :  171
+		num normals        :  171
+		num tangents       :  0
+		num uvs            :  342
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  76
+========= Writing of JSON file started =========
+	writing mesh:  blank
+	writing mesh:  Plane_000
+	writing mesh:  Plane_001
+	writing mesh:  Plane_002
+	writing mesh:  Plane_003
+	writing mesh:  Plane_004
+	writing mesh:  Plane_005
+	writing mesh:  Plane_006
+	writing mesh:  Plane_007
+	writing mesh:  Plane_008
+	writing mesh:  Plane_009
+	writing mesh:  Plane_010
+	writing mesh:  Plane_011
+	writing mesh:  Plane_012
+	writing mesh:  Plane_013
+	writing mesh:  Plane_014
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 0.2369 secs
