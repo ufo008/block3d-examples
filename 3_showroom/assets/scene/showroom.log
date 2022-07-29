@@ -9,7 +9,7 @@ Exporter version: 2.93.4, Blender version: 3.0.0
 		Vert Color Precision:  3
 		Mat Weight Precision:  2
 		Keep Z-up r-handed  :  no
-		Texture directory   :  D:\projects\showroom\assets\scene\
+		Texture directory   :  D:\projects\3_showroom\assets\scene\
 	Python World class constructor completed
 	WARNING: No active camera has been assigned, or is not in a currently enabled collection
 	processing begun of node:  objects
@@ -123,4 +123,4 @@ Exporter version: 2.93.4, Blender version: 3.0.0
 	writing mesh:  top
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 2.3439 secs
+elapsed time:  0 min, 1.7882 secs
